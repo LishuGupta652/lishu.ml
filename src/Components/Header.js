@@ -21,12 +21,16 @@ const Header = () => {
                         <img src={Image_icon} alt="lishu Gupta"/>
                         <h2 className="name">Dimitri Marco</h2>
                         <p className="info">Lorem lorem lorem ipsu is the greatets ihis kand thisk akjldf he lkajd iognakdjf oiejkaf dljka.</p>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                        <Link 
+                              to="portfolio"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-80}
+                              duration={500}
+                              delay={300} >
+                                    <i class="fa fa-angle-down down-icon" aria-hidden="true"></i>
+                        </Link>                        
                     </div>
                 </div>
                 </div>

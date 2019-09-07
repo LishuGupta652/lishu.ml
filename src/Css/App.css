@@ -66,7 +66,7 @@ a *{
 .hero{
   position: absolute;
   top : 30%;
-  left: 20%;
+  left: 50%;
   border-radius: 6px;
   text-align: center;
   transform: translate(-50%, 0);
@@ -78,6 +78,7 @@ a *{
 }
 .hero-content{
   position: relative;
+  font-family:cursive;
 }
 .hero-content img{
   position: absolute;
@@ -90,42 +91,28 @@ a *{
 }
 .hero-content .name{
   padding-top: 100px;
-  font-size: 30px;
+  font-size: 35px;
+  color: #FAD02C;
 }
 .hero-content .info{
-  font-family: 'Lekton', sans-serif;
   padding: 20px;
+  line-height: 30px;
   padding-top: 40px;
   letter-spacing: 3px;
 }
 
 .hero:hover{
   background-color: azure;
-  color: #0e1111;
+  color: #121212;
 }
-.hero:hover > .hero-content .info {
-  transform: scale(50px);
+.hero:hover > .hero-content .down-icon{
+  color: #112222;
 }
-
 .down-icon{
-  grid-column: 2/3;
-  grid-row: 3/4;
-  align-self: center;
-  justify-self: center;
+  padding-top: 80px;
   font-size: 50px;
-
 }
 
-@media (max-width:1200px){
-  .hero{
-    left: 50%;
-  }
-}
-@media (max-width:768px){
-  .hero{
-    left: 50%;
-  }
-}
 
 .portfolio{
   /* height:1000px; */
