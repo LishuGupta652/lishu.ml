@@ -19,8 +19,18 @@ const Header = () => {
                 <div className="hero">
                     <div className="hero-content">
                         <img src={Image_icon} alt="lishu Gupta"/>
-                        <h2 className="name">Dimitri Marco</h2>
-                        <p className="info">Lorem lorem lorem ipsu is the greatets ihis kand thisk akjldf he lkajd iognakdjf oiejkaf dljka.</p>
+                        <h2 className="name">Lishu Gupta</h2>
+
+                        <i class="devicon-android-plain colored"></i>
+                        <i class="devicon-java-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-heroku-original colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-python-plain colored"></i>
+
+
+                        <p className="info">Web Developer and Programmer.</p>
                         <Link 
                               to="portfolio"
                               spy={true}

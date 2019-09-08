@@ -1,5 +1,4 @@
 :root{
-  --primary-color: #c33764;
   --primary-transition: .35s ease-in-out;
 }
 
@@ -37,31 +36,15 @@ a *{
 
 
 
-/* globals */
-.line{
-  width: 100px;
-  height: 5px;
-  display: flex;
-  width: 100%;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-.line div{
-  width: 30%;
-  min-width: 20px;
-  border-radius: 3px;
-  background-color: var(--primary-color);
-}
-
-
 
 /* navbar */
 .banner{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   color: white;
   text-transform: uppercase;
+  overflow:hidden;
 }
 .hero{
   position: absolute;
@@ -100,6 +83,11 @@ a *{
   padding-top: 40px;
   letter-spacing: 3px;
 }
+.hero-content i{
+  font-size: 25px;
+  padding: 5px;
+  margin-top: 30px;
+}
 
 .hero:hover{
   background-color: azure;
@@ -114,45 +102,9 @@ a *{
 }
 
 
-.portfolio{
-  /* height:1000px; */
-  width: 100%;
-  font-family: 'Muli', sans-serif;
-  color: var(--primary-color);
-  margin-bottom: 150px;
-  
-}
-.title{
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,300px));
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: center;
+@media (max-width:480px){
+  .hero{
+    width: 90vw;
+  }
 }
 
-.cards .card{
-  background-color: #121212;
-  color: white;
-  min-height: 400px;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 10px 10px 10px grey;
-  padding: 15px;
-}
-
-.card .desc{
-  font-size: 20px;
-  margin-top: 15px;
-}
-.inline{
-  display: flex;
-}
-.inline h3{
-  margin-left: auto;
-}
