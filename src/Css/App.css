@@ -173,8 +173,6 @@ a *{
   color: #f39c12;
   font-size: 50px;
 }
-.grid .one:hover > .content{
-}
 .grid .two{
   grid-area: two;
   color: #d35400;
@@ -183,7 +181,7 @@ a *{
 }
 .grid .two i{
   padding: 15px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .grid .two:hover > i{
@@ -217,6 +215,20 @@ a *{
     "two"
     "three";
   }
+  .grid .one .content{
+    font-size: 30px;
+  }
+  .grid .one .content i{
+    font-size: 80px;
+    padding-top: 30px;
+  }
+  .grid .two{
+    font-size: 40px;
+  }
+  .grid .three{
+    font-size: 35px;
+  }
+  
 }
 
 
