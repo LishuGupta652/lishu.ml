@@ -24,15 +24,16 @@ const Header = () => {
                         <i class="devicon-android-plain colored"></i>
                         <i class="devicon-java-plain colored"></i>
                         <i class="devicon-javascript-plain colored"></i>
-                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-react-original colored react-rotate"></i>
                         <i class="devicon-heroku-original colored"></i>
                         <i class="devicon-html5-plain colored"></i>
                         <i class="devicon-python-plain colored"></i>
 
 
                         <p className="info">Web Developer and Programmer.</p>
+                        <p className="info">*Blogger Anonymously</p>
                         <Link 
-                              to="portfolio"
+                              to="work"
                               spy={true}
                               smooth={true}
                               hashSpy={true}
@@ -43,6 +44,8 @@ const Header = () => {
                         </Link>                        
                     </div>
                 </div>
+
+
                 </div>
                 
                 
