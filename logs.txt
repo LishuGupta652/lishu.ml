@@ -1,0 +1,2 @@
+used react-reveal for animations 
+used react-page progress

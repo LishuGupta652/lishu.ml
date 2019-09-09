@@ -103,12 +103,6 @@ a *{
     font-size: 23px;
   }
 }
-.hero:hover{
-  background-color: rgb(87, 85, 85);
-}
-.hero:hover > .hero-content .down-icon{
-  color: #112222;
-}
 .down-icon{
   padding-top: 80px;
   font-size: 50px;
@@ -124,8 +118,8 @@ a *{
 
 
 
-/* works */
-.work{
+/* Skills */
+.skill{
   margin: 50px 0px;
   position: relative;
 }
@@ -136,20 +130,23 @@ a *{
   font-size: 10vh;
   transition: var(--fast-transition);
 }
-.down:hover{
+.down i{
+  color: black;
+}
+.down i:hover{
   color:red;
 }
-.work .container{
+.skill .container{
   width: 90vw;
   margin: auto; 
 }
-.work .top h1{
+.skill .top h1{
   font-size: 100px;
   margin-bottom: -30px;
   z-index: 10;
   color: black;
 }
-.work .top h1:hover{
+.skill .top h1:hover{
   color: red;
 }
 .grid{
@@ -199,13 +196,12 @@ a *{
 .grid .three:hover >  .android{
   font-size: 150px;
 }
-.grid .one:hover > .content .rotate{
+.grid .one .content .rotate{
   animation : rotate 2s infinite;
 }
 
 
-
-
+/* skills media query */
 @media (max-width:968px){
   .grid{
     display: grid;
@@ -231,11 +227,43 @@ a *{
   
 }
 
+/* works */
+.work{
+  width:100%;
+  height: 500px;
+  margin: 200px 0;
+  background-color: #f3a683;
+  color: white;
+  position: relative;
+}
+.work .container{
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.work h1{
+  position: absolute;
+  top:-30px;
+  font-size: 80px;
+}
+.work .right-img{
+  width: 60vw;
+  height: auto;
+  position: absolute;
+  right: 40px;
+  bottom: -80px;
+  margin-top: 130px;
+  box-shadow: 3px 3px 20px #121212;
+}
+.right-img img{
+  width: 100%;
 
-
-
-
-
+}
+.guest{
+  width: 100%;
+  height: 400px;
+  background-color: #f19066;
+}
 
 /* animations */
 @keyframes rotate{

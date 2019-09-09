@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import Image_icon from "../image/hero-img.jpg"
+
+// react-reveal
+import HeadShake from 'react-reveal/HeadShake';
+
 const Header = () => {
     return (
         <>
@@ -19,7 +23,9 @@ const Header = () => {
                 <div className="hero">
                     <div className="hero-content">
                         <img src={Image_icon} alt="lishu Gupta"/>
+                        <HeadShake>
                         <h2 className="name">Lishu Gupta</h2>
+                        </HeadShake>
 
                         <i class="devicon-android-plain colored"></i>
                         <i class="devicon-java-plain colored"></i>
@@ -33,11 +39,11 @@ const Header = () => {
                         <p className="info">Web Developer and Programmer.</p>
                         <p className="info">*Blogger Anonymously</p>
                         <Link 
-                              to="work"
+                              to="skill"
                               spy={true}
                               smooth={true}
                               hashSpy={true}
-                              offset={-80}
+                              offset={-10}
                               duration={500}
                               delay={300} >
                                     <i class="fa fa-angle-down down-icon" aria-hidden="true"></i>

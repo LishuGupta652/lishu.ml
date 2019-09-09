@@ -1,13 +1,23 @@
 import React from 'react'
 import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
+import { Link } from "react-scroll";
 
 const Skills = () => {
     return (
-        <div className="work" id="work">
+        <div className="skill" id="skill">
             
             <div className="down">
-                <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                <Link 
+                        to="work"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={0}
+                        duration={500}
+                        delay={300} >
+                            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                </Link>   
             </div>
 
             <div className="container">
@@ -20,9 +30,9 @@ const Skills = () => {
                 <div className="grid">
                     <div className="one">
                         <div className="content">
-                            <Zoom top>
+                    
                                 <h1>PYTHON</h1>
-                            </Zoom>
+                    
                         <div className="rotate">
                         <i class="devicon-python-plain colored"></i>
                         </div>
@@ -30,9 +40,9 @@ const Skills = () => {
                 </div>
 
                 <div className="two">
-                    <Zoom top>
+                    
                         Web Development
-                    </Zoom>
+                    
                     <div className="padding-top-5">
                         <i class="devicon-html5-plain colored"></i>
                         <i class="devicon-css3-plain colored"></i>
@@ -43,9 +53,9 @@ const Skills = () => {
                     </div>
                     </div>
                     <div className="three">
-                        <Zoom top>
+                        
                             Android Development
-                        </Zoom>
+                        
                         <div className="android">
                         <i class="devicon-android-plain-wordmark colored"></i>
                         </div>
