@@ -168,10 +168,11 @@ a *{
 .grid .one{
   grid-area: one;
   background-color:#7fb0a6;
+  padding-top: 30px;
 }
 .grid .one .content{
   color: #f39c12;
-  font-size: 30px;
+  font-size: 34px;
 }
 .grid .two{
   grid-area: two;
@@ -224,13 +225,43 @@ a *{
     font-size: 60px;
   }
   .grid .two{
-    font-size: 28px;
+    font-size: 40px;
+  }
+  .grid .two i{
+    font-size: 50px;
+  }
+  .grid .three{
+    font-size: 40px;
+  }
+  
+}
+@media (max-width:600px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 250px 300px;
+    grid-template-areas: "one"
+    "two"
+    "three";
+  }
+  .skills h1{
+    font-size: 50px;
+  }
+  .grid .one .content{
+
+    font-size: 25px;
+  }
+  .grid .one .content i{
+    font-size: 40px;
+  }
+  .grid .two{
+    font-size: 30px;
   }
   .grid .two i{
     font-size: 30px;
   }
   .grid .three{
-    font-size: 28px;
+    font-size: 30px;
   }
   
 }
