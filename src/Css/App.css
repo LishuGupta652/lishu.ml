@@ -31,6 +31,9 @@ html * {
   scroll-behavior: smooth;
   transition: var(--primary-transition);
 }
+h1{
+  font-weight: 500;
+}
 a *{
   color: white;
 }
@@ -168,7 +171,7 @@ a *{
 }
 .grid .one .content{
   color: #f39c12;
-  font-size: 50px;
+  font-size: 30px;
 }
 .grid .two{
   grid-area: two;
@@ -206,23 +209,28 @@ a *{
   .grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 250px 300px;
+    grid-template-rows: 200px 250px 300px;
     grid-template-areas: "one"
     "two"
     "three";
   }
+  .skills h1{
+    font-size: 60px;
+  }
   .grid .one .content{
-    font-size: 30px;
+    font-size: 25px;
   }
   .grid .one .content i{
-    font-size: 80px;
-    padding-top: 30px;
+    font-size: 60px;
   }
   .grid .two{
-    font-size: 40px;
+    font-size: 28px;
+  }
+  .grid .two i{
+    font-size: 30px;
   }
   .grid .three{
-    font-size: 35px;
+    font-size: 28px;
   }
   
 }

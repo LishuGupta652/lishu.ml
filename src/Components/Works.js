@@ -47,7 +47,8 @@ const Works = () => {
                 <div className="container">
                     <div className="details">
                         <h3>Paying Guest</h3>
-                        <p>Mentionable Project</p>
+                        <p>-- Mentionable Project</p>
+                        <p>-- Firebase and React</p>
                     </div>
                     <div className="img">
                         <a href="http://www.payingguest.ml" target="_blank" >
