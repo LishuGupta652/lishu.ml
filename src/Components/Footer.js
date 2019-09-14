@@ -10,6 +10,12 @@ const Footer = () => {
             </a>
             <h1> <i class="fa fa-quote-left" aria-hidden="true"></i> Don't Judge Me I Am Still Learning.</h1>
             </div>
+
+            <div className="resume">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTRPxqMUs8JcoNAZa0REjRpWYL13gapNxeawQFBKiFVtyMekxxbY945uvm2KVPZJHTU2ih61Xsl1Fze/pub">
+                    Resume
+                </a>
+            </div>
         </div>
     )
 }

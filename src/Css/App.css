@@ -377,3 +377,21 @@ a *{
 .footer h1{
   font-size: 30px;
 }
+
+.resume{
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  color: white;
+}
+.resume a{
+  color: white;
+  background-color: #333;
+  padding: 12px;
+  font-size: 2.5vw;
+  box-shadow: 1px 1px 5px #121212;
+  transition: .2s;
+}
+.resume a:hover{
+  box-shadow: 1px 1px 20px #121212;
+}
