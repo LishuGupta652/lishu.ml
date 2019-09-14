@@ -5,6 +5,7 @@ import PageProgress from 'react-page-progress'
 import Header from './Components/Header'
 import Skills from './Components/Skills'
 import Works from './Components/Works'
+import Footer from './Components/Footer'
 
 // CSS Files
 import './Css/App.css'
@@ -15,6 +16,8 @@ function App() {
       <Header />
       <Skills /> 
       <Works />
+
+      <Footer />
 
     </div>
   );

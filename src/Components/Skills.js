@@ -1,7 +1,9 @@
 import React from 'react'
 import Bounce from 'react-reveal/Bounce';
-import Zoom from 'react-reveal/Zoom';
 import { Link } from "react-scroll";
+
+import Zoom from 'react-reveal/Zoom';
+import HeadShake from 'react-reveal/HeadShake';
 
 const Skills = () => {
     return (
@@ -30,18 +32,25 @@ const Skills = () => {
                 <div className="grid">
                     <div className="one">
                         <div className="content">
-                    
-                                <h1>PYTHON</h1>
-                    
-                        <div className="rotate">
-                        <i class="devicon-python-plain colored"></i>
+                                <HeadShake>
+                                <h1>PROGRAMMING</h1>
+                                </HeadShake>
+                        <div className="flex">
+                            <i class="devicon-c-plain colored"></i>
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <i class="devicon-python-plain colored"></i>
+                            <i class="devicon-java-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+
                         </div>
                     </div>
                 </div>
 
                 <div className="two">
                     
+                    <HeadShake>
                         Web Development
+                    </HeadShake>
                     
                     <div className="padding-top-5">
                         <i class="devicon-html5-plain colored"></i>
@@ -54,7 +63,9 @@ const Skills = () => {
                     </div>
                     <div className="three">
                         
+                        <HeadShake>
                             Android Development
+                        </HeadShake>
                         
                         <div className="android">
                         <i class="devicon-android-plain-wordmark colored"></i>

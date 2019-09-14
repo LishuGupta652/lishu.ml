@@ -4,6 +4,7 @@ import azaelindia from '../image/azaelindia.jpg';
 import payingguest from '../image/payingguest.jpg';
 
 import Bounce from 'react-reveal/Bounce';
+import HeadShake from 'react-reveal/HeadShake';
 
 const Works = () => {
     return (   
@@ -18,7 +19,9 @@ const Works = () => {
             <section className="wrapper wrapper-1">
                 <div className="container">
                     <div className="details">
-                        <h3>Azael India</h3>
+                        <HeadShake>
+                            <h3>Azael India</h3>
+                        </HeadShake>
                         <p>Organization Operating In The Field of manufacturing, fabrication and trading of mobile health service vans, special concept vehicles, security surveillance vans, health centers and medical equipment.</p>
                     </div>
                     <div className="img">
@@ -37,7 +40,9 @@ const Works = () => {
                         </a>
                     </div>
                     <div className="details">
-                        <h3>The Dwarf Company</h3>
+                        <HeadShake>
+                            <h3>The Dwarf Company</h3>
+                        </HeadShake>
                         <p>Startup's are love.</p>
                     </div>
                 </div>
@@ -46,7 +51,9 @@ const Works = () => {
             <section className="wrapper wrapper-3">
                 <div className="container">
                     <div className="details">
-                        <h3>Paying Guest</h3>
+                        <HeadShake>
+                            <h3>Paying Guest</h3>
+                        </HeadShake>
                         <p>-- Mentionable Project</p>
                         <p>-- Firebase and React</p>
                     </div>

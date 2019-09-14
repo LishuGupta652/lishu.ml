@@ -37,8 +37,13 @@ h1{
 a *{
   color: white;
 }
-
-
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.flex i{
+  padding: 20px;
+}
 
 
 /* navbar */
@@ -249,10 +254,10 @@ a *{
   }
   .grid .one .content{
 
-    font-size: 25px;
+    font-size: 20px;
   }
   .grid .one .content i{
-    font-size: 40px;
+    font-size: 30px;
   }
   .grid .two{
     font-size: 30px;
@@ -261,7 +266,7 @@ a *{
     font-size: 30px;
   }
   .grid .three{
-    font-size: 30px;
+    font-size: 25px;
   }
   
 }
@@ -274,6 +279,7 @@ a *{
   position: relative;
   width:100%;
   margin: 150px 0;
+  margin-bottom: 0;
 }
 .work h1{
   font-size: 90px;
@@ -347,4 +353,27 @@ a *{
 .padding-top-5{
   padding: 80px;
   padding-top: 50px;  
+}
+
+
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  font-size: 100px;
+}
+.footer i:hover{
+  color: #6cc644;
+}
+.footer h1{
+  font-size: 30px;
 }
