@@ -15,7 +15,7 @@ const Skills = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={0}
+                        offset={25}
                         duration={500}
                         delay={300} >
                             <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
