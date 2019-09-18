@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
 
             <div className="resume">
-                <a href="https://docs.google.com/document/d/e/2PACX-1vTRPxqMUs8JcoNAZa0REjRpWYL13gapNxeawQFBKiFVtyMekxxbY945uvm2KVPZJHTU2ih61Xsl1Fze/pub">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQAYtwHunE6q5hijPSPIjnDbJW6LViny7gwaY08_mH0FNFQgbhYOtP74du28FIRTwMaLXvJ6w8Ghqlb/pub">
                     Resume
                 </a>
             </div>
