@@ -285,10 +285,24 @@ a * {
   margin-bottom: 0;
 }
 .work h1 {
-  font-size: 90px;
-  margin-bottom: -85px;
+  font-size: 88px;
+  margin-top: 0px;
   font-weight: 500;
   color: white;
+}
+.work .wrapper-1 {
+  position: relative;
+}
+.work .heading {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+.work .wrapper-5 {
+  position: relative;
+}
+.work .heading-android {
+  top: -23px;
 }
 .work h3 {
   font-size: 30px;
@@ -327,19 +341,30 @@ a * {
 }
 
 .work .wrapper-3 {
-  background-color: #e77f67;
-}
-
-.work .wrapper-4 {
   background-color: #34495e;
   color: white;
 }
+
+.work .wrapper-4 {
+  background-color: #e77f67;
+}
+.work .wrapper-5 {
+  background-color: #2ecc71;
+}
+
 @media (max-width: 950px) {
   .work .container {
     flex-direction: column;
   }
   .work .details {
     width: 90%;
+  }
+  .work .android-img-container {
+    width: 100%;
+  }
+  .work .android-image {
+    width: 50%;
+    margin: 0px 100px;
   }
 }
 /* end of work */

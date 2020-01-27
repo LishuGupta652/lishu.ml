@@ -3,6 +3,7 @@ import dwarf from "../image/dwarf.jpg";
 import azaelindia from "../image/azaelindia.jpg";
 import payingguest from "../image/payingguest.jpg";
 import dwarfinc from "../image/DwarfINC.jpg";
+import awningApp from "../image/awningApp.jpg";
 
 import Bounce from "react-reveal/Bounce";
 import HeadShake from "react-reveal/HeadShake";
@@ -10,13 +11,12 @@ import HeadShake from "react-reveal/HeadShake";
 const Works = () => {
   return (
     <div className="work">
-      <div className="heading container">
-        <Bounce left>
-          <h1>Works</h1>
-        </Bounce>
-      </div>
-
       <section className="wrapper wrapper-1">
+        <div className="heading container">
+          <Bounce left>
+            <h1>Works</h1>
+          </Bounce>
+        </div>
         <div className="container">
           <div className="details">
             <HeadShake>
@@ -88,6 +88,34 @@ const Works = () => {
             </HeadShake>
             <p>Smart India Project</p>
             <p>Building a Smart Future</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="wrapper wrapper-5">
+        <div className="heading container heading-android">
+          <Bounce left>
+            <h1>Android</h1>
+          </Bounce>
+        </div>
+        <div className="container">
+          <div className="details">
+            <HeadShake>
+              <h3>Awning Manufacture</h3>
+            </HeadShake>
+            <p>Android Studio</p>
+            <p></p>
+          </div>
+          <div className="img">
+            <a href="http://www.payingguest.ml" target="_blank">
+              <div className="android-img-container">
+                <img
+                  className="android-image"
+                  src={awningApp}
+                  alt="Paying Guest"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </section>
