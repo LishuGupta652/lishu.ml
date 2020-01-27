@@ -11,12 +11,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div>
-          <div class="container">Your content here...</div>
-
-          <canvas class="background"></canvas>
-        </div>
-        {/* <div className="banner">
+        <div className="banner">
           <div style={{ height: "90vh", overflow: "", position: "relative" }}>
             <svg
               viewBox="0 0 500 150"
@@ -60,7 +55,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </header>
     </>
   );
