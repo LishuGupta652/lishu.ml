@@ -304,6 +304,13 @@ a * {
 .work .heading-android {
   top: -23px;
 }
+.work .wrapper-6 {
+  position: relative;
+}
+.work .heading-python {
+  top: -23px;
+}
+
 .work h3 {
   font-size: 30px;
   font-weight: 500;
@@ -349,9 +356,12 @@ a * {
   background-color: #e77f67;
 }
 .work .wrapper-5 {
-  background-color: #2ecc71;
+  background-color: #3c6382;
+  color: white;
 }
-
+.work .wrapper-6 {
+  background-color: thistle;
+}
 @media (max-width: 950px) {
   .work .container {
     flex-direction: column;

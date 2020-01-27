@@ -4,6 +4,7 @@ import azaelindia from "../image/azaelindia.jpg";
 import payingguest from "../image/payingguest.jpg";
 import dwarfinc from "../image/DwarfINC.jpg";
 import awningApp from "../image/awningApp.jpg";
+import trex from "../image/trex.gif";
 
 import Bounce from "react-reveal/Bounce";
 import HeadShake from "react-reveal/HeadShake";
@@ -95,7 +96,7 @@ const Works = () => {
       <section className="wrapper wrapper-5">
         <div className="heading container heading-android">
           <Bounce left>
-            <h1>Android</h1>
+            <h1 style={{ color: "#e77f67" }}>Android</h1>
           </Bounce>
         </div>
         <div className="container">
@@ -115,6 +116,29 @@ const Works = () => {
                   alt="Paying Guest"
                 />
               </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="wrapper wrapper-6">
+        <div className="heading container heading-python">
+          <Bounce left>
+            <h1 style={{ color: "#3c6382" }}>Python</h1>
+          </Bounce>
+        </div>
+        <div className="container">
+          <div className="details">
+            <HeadShake>
+              <h3>Automated Gaming</h3>
+            </HeadShake>
+            <p>Python</p>
+            <p>PyAutoGUI</p>
+            <p>PIL</p>
+          </div>
+          <div className="img">
+            <a href="http://www.dwarfinc.ml" target="_blank">
+              <img src={trex} alt="Dwarf INC" />
             </a>
           </div>
         </div>
