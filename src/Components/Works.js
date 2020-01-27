@@ -108,7 +108,7 @@ const Works = () => {
             <p></p>
           </div>
           <div className="img">
-            <a href="http://www.payingguest.ml" target="_blank">
+            <a href="http://awningmanufacturer.org/" target="_blank">
               <div className="android-img-container">
                 <img
                   className="android-image"
@@ -137,9 +137,7 @@ const Works = () => {
             <p>PIL</p>
           </div>
           <div className="img">
-            <a href="http://www.dwarfinc.ml" target="_blank">
-              <img src={trex} alt="Dwarf INC" />
-            </a>
+            <img src={trex} alt="Dwarf INC" />
           </div>
         </div>
       </section>

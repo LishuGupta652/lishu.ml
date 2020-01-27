@@ -203,8 +203,8 @@ a * {
 }
 .grid .three {
   grid-area: three;
-  color: #27ae60;
-  background-color: darkorange;
+  color: #006266;
+  background-color: #c4e538;
 }
 .grid .three .android {
   font-size: 100px;
@@ -348,7 +348,7 @@ a * {
 }
 
 .work .wrapper-3 {
-  background-color: #34495e;
+  background-color: #60a3bc;
   color: white;
 }
 
@@ -360,7 +360,7 @@ a * {
   color: white;
 }
 .work .wrapper-6 {
-  background-color: thistle;
+  background-color: #78e08f;
 }
 @media (max-width: 950px) {
   .work .container {
