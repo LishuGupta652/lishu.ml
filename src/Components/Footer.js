@@ -1,5 +1,7 @@
 import React from "react";
 import Flag from "../image/flag.svg";
+import Zoom from "react-reveal/Zoom";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -24,7 +26,9 @@ const Footer = () => {
         </a>
       </div>
       <div class="flag-container">
-        <img src={Flag} />
+        <Zoom right>
+          <img src={Flag} />
+        </Zoom>
       </div>
     </div>
   );
