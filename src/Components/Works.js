@@ -32,7 +32,11 @@ const Works = () => {
             </p>
           </div>
           <div className="img">
-            <a href="https://www.azaelindia.com" target="_blank">
+            <a
+              href="https://www.azaelindia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={azaelindia} alt="Azael India" />
             </a>
           </div>
@@ -42,7 +46,11 @@ const Works = () => {
       <section className="wrapper wrapper-2">
         <div className="container">
           <div className="img">
-            <a href="https://www.dwarf.ga" target="_blank">
+            <a
+              href="https://www.dwarf.ga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={dwarf} alt="The Dwarf Company" />
             </a>
           </div>
@@ -69,7 +77,11 @@ const Works = () => {
             <p>React Frontend</p>
           </div>
           <div className="img">
-            <a href="http://www.payingguest.ml" target="_blank">
+            <a
+              href="http://www.payingguest.ml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={payingguest} alt="Paying Guest" />
             </a>
           </div>
@@ -79,7 +91,11 @@ const Works = () => {
       <section className="wrapper wrapper-4">
         <div className="container">
           <div className="img">
-            <a href="http://www.dwarfinc.ml" target="_blank">
+            <a
+              href="http://www.dwarfinc.ml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={dwarfinc} alt="Dwarf INC" />
             </a>
           </div>
@@ -108,7 +124,11 @@ const Works = () => {
             <p></p>
           </div>
           <div className="img">
-            <a href="http://awningmanufacturer.org/" target="_blank">
+            <a
+              href="http://awningmanufacturer.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="android-img-container">
                 <img
                   className="android-image"

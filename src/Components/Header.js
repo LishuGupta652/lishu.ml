@@ -5,8 +5,6 @@ import Image_icon from "../image/hero-img.jpg";
 // react-reveal
 import HeadShake from "react-reveal/HeadShake";
 
-import Particles from "react-particles-js";
-
 const Header = () => {
   return (
     <>

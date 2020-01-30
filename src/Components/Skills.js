@@ -2,9 +2,6 @@ import React from "react";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
 
-import Zoom from "react-reveal/Zoom";
-import HeadShake from "react-reveal/HeadShake";
-
 const Skills = () => {
   return (
     <div className="skill" id="skill">
