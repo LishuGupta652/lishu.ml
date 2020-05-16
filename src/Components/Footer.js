@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div class="flag-container">
         <Zoom right>
-          <img src={Flag} />
+          <img alt="flag" src={Flag} />
         </Zoom>
       </div>
     </div>
