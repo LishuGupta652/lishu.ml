@@ -1,56 +1,98 @@
-import React from "react";
-import { Link } from "react-scroll";
-import Image_icon from "../image/hero-img.jpg";
+import React, { useEffect } from "react";
+import LogRocket from "logrocket";
+// gsap
+import { gsap, TimelineMax, TweenMax as T, Expo, Ease } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+// Force CSSPlugin to not get dropped during build
 
-// react-reveal
-import HeadShake from "react-reveal/HeadShake";
+gsap.registerPlugin(CSSPlugin);
+LogRocket.init("o47tqc/pakkabaniya");
+
+LogRocket.identify("001", {
+  name: "tarun Gupta",
+  email: "001@pakkabaniya.ml",
+
+  // Add your own custom user variables here, ie:
+  subscriptionType: "pro",
+});
 
 const Header = () => {
+  const t1 = new TimelineMax();
+
+  useEffect(() => {
+    pageAnimation();
+  }, []);
+
+  const pageAnimation = () => {
+    T.from(".wrapper", 1, {
+      width: "0%",
+    });
+  };
+
   return (
     <>
       <header>
-        <div className="banner">
-          <div style={{ height: "90vh", overflow: "", position: "relative" }}>
-            <svg
-              viewBox="0 0 500 150"
-              preserveAspectRatio="none"
-              style={{ height: "100%", width: "100%" }}
-            >
-              <path
-                d="M0.00,130.27 C216.00,182.92 300.30,60.39 500.00,139.03 L500.00,0.00 L0.00,0.00 Z"
-                style={{ stroke: "none", fill: "#333652" }}
-              ></path>
-            </svg>
+        <div className="header">
+          <div className="header-inner">
+            <div className="wrapper"></div>
 
-            <div className="hero">
-              <div className="hero-content">
-                <img src={Image_icon} alt="lishu Gupta" />
-                <HeadShake>
-                  <h2 className="name">Lishu Gupta</h2>
-                </HeadShake>
+            <div className="logo">
+              <img src={require("../image/logo.png")} alt="logo" />
+            </div>
 
-                <i class="devicon-android-plain colored"></i>
-                <i class="devicon-java-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-react-original colored react-rotate"></i>
-                <i class="devicon-heroku-original colored"></i>
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
+            <div className="icons">
+              <i className="devicon-c-plain colored"></i>
+              <i className="devicon-cplusplus-plain colored"></i>
+              <i className="devicon-python-plain colored"></i>
+              <i className="devicon-java-plain colored"></i>
+              <i className="devicon-javascript-plain colored"></i>
+              <i className="devicon-html5-plain colored"></i>
+              <i className="devicon-css3-plain colored"></i>
+              <i className="devicon-javascript-plain colored"></i>
+              <i className="devicon-react-original colored"></i>
+              <i className="devicon-bootstrap-plain colored"></i>
+              <i className="devicon-android-plain-wordmark colored"></i>
+            </div>
 
-                <p className="info">Web Developer and Programmer.</p>
-                <p className="info">*Blogger Anonymously</p>
-                <Link
-                  to="skill"
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={-10}
-                  duration={500}
-                  delay={300}
+            <div className="nav">
+              <ul>
+                <li>
+                  <a href="#works">Works</a>
+                </li>
+                <li>
+                  <a href="#">Certifications</a>
+                </li>
+              </ul>
+            </div>
+
+            <h1 className="info">
+              Web Developer, Android Developer and Programmer.
+            </h1>
+
+            <div className="buttons">
+              <button className="b-github">
+                <a
+                  href="https://www.github.com/lishugupta652"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <i class="fa fa-angle-down down-icon" aria-hidden="true"></i>
-                </Link>
-              </div>
+                  <i className="fa fa-github icon-m" aria-hidden="true"></i>
+                  Github
+                </a>
+              </button>
+              <button className="b-resume">
+                <a
+                  href="https://docs.google.com/document/d/1UiG9E1EZsSIehbzVPrvFfXyfyQhO7GC_E66tvmv1vjc/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    className="fa fa-file-text-o icon-m"
+                    aria-hidden="true"
+                  ></i>
+                  Resume
+                </a>
+              </button>
             </div>
           </div>
         </div>
