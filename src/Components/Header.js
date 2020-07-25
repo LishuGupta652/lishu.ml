@@ -1,9 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
-import Image_icon from "../image/hero-img.jpg";
-
-// react-reveal
-import HeadShake from "react-reveal/HeadShake";
 
 const Header = () => {
   return (
@@ -16,13 +11,34 @@ const Header = () => {
                 <img src={require("../image/logo.png")} alt="logo" />
               </div>
 
-              <h1>Web Developer Android Developer and Programmer.</h1>
+              {/* <div className="nav">
+                <ul>
+                  <li>Works</li>
+                  <li>Certifications</li>
+                </ul>
+              </div> */}
+
+              <h1>Web Developer, Android Developer and Programmer.</h1>
               <div className="buttons">
                 <button className="b-github">
-                  <i class="fa fa-github icon-m" aria-hidden="true"></i>
-                  Github
+                  <a
+                    href="https://www.github.com/lishugupta652"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github icon-m" aria-hidden="true"></i>
+                    Github
+                  </a>
                 </button>
-                <button className="b-resume">Resume</button>
+
+                <button className="b-resume">
+                  <a
+                    href="https://docs.google.com/document/d/1UiG9E1EZsSIehbzVPrvFfXyfyQhO7GC_E66tvmv1vjc/edit?usp=sharing"
+                    target="_blank"
+                  >
+                    <i class="fa fa-file-text-o icon-m" aria-hidden="true"></i>
+                    Resume
+                  </a>
+                </button>
               </div>
             </div>
           </div>
