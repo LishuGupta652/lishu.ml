@@ -2,7 +2,7 @@
 
 # BRANCH UPDATE
 
-![Image](https://www.pakkabaniya.ml/static/media/hero-img.2ec26ea8.jpg "lishugupta")
+![Image](https://www.pakkabaniya.ml/favicon.ico "lishugupta")
 
 ### Upcomming Updates
 
