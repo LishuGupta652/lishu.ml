@@ -7,16 +7,23 @@ const Header = () => {
         <div className="header">
           <div className="container">
             <div className="header-inner">
+              <div className="wrapper"></div>
+              <div className="wrapper-blue"></div>
+
               <div className="logo">
                 <img src={require("../image/logo.png")} alt="logo" />
               </div>
 
-              {/* <div className="nav">
+              <div className="nav">
                 <ul>
-                  <li>Works</li>
-                  <li>Certifications</li>
+                  <li>
+                    <a href="#">Works</a>
+                  </li>
+                  <li>
+                    <a href="#">Certifications</a>
+                  </li>
                 </ul>
-              </div> */}
+              </div>
 
               <h1>Web Developer, Android Developer and Programmer.</h1>
               <div className="buttons">

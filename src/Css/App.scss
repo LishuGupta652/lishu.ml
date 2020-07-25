@@ -64,6 +64,24 @@ a * {
       align-items: center;
       height: 100%;
       position: relative;
+      // wrapper
+      .wrapper {
+        background-color: rgba(0, 0, 230, 0.1);
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        animation: move 3s ease-in-out;
+      }
+      .wrapper-blue {
+        background-color: rgba(0, 0, 230, 0.1);
+        width: 10%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+      }
 
       // logo
       .logo {
@@ -80,11 +98,21 @@ a * {
 
       // nav
       .nav {
+        position: absolute;
+        top: 50px;
+        right: 40px;
         ul {
           display: flex;
+
           li {
+            cursor: pointer;
+            font-size: 12px;
             margin-right: 10px;
             text-transform: uppercase;
+            padding: 5px;
+            a {
+              color: black;
+            }
           }
         }
       }
@@ -98,11 +126,13 @@ a * {
         border-radius: 10px;
         background-color: rgba(0, 200, 0, 0.05);
         text-transform: uppercase;
+        z-index: 1;
       }
       .buttons {
         width: 600px;
         display: flex;
         justify-content: center;
+        z-index: 1;
         button {
           a {
             width: 100%;
@@ -121,6 +151,17 @@ a * {
         }
       }
     }
+  }
+}
+
+@keyframes move {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 100%;
   }
 }
 
