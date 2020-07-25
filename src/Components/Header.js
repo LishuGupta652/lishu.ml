@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+// gsap
+import { gsap, TimelineMax, Expo, Ease } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+// Force CSSPlugin to not get dropped during build
+gsap.registerPlugin(CSSPlugin);
 
 const Header = () => {
+  const t1 = new TimelineMax();
+  useEffect(() => {
+    pageAnimation();
+  });
+
+  const pageAnimation = () => {
+    console.log("hello");
+    t1.from(".wrapper-blue", 1.5, {
+      width: "0%",
+      ease: Expo.easeInOut,
+    });
+    t1.from(".info", 0.8, {
+      y: 50,
+      opacity: 0,
+      scale: 2.5,
+      ease: Expo.easeIn,
+    });
+  };
+
   return (
     <>
       <header>
@@ -25,24 +49,29 @@ const Header = () => {
                 </ul>
               </div>
 
-              <h1>Web Developer, Android Developer and Programmer.</h1>
+              <h1 className="info">
+                Web Developer, Android Developer and Programmer.
+              </h1>
+
               <div className="buttons">
                 <button className="b-github">
                   <a
                     href="https://www.github.com/lishugupta652"
                     target="_blank"
                   >
-                    <i class="fa fa-github icon-m" aria-hidden="true"></i>
+                    <i className="fa fa-github icon-m" aria-hidden="true"></i>
                     Github
                   </a>
                 </button>
-
                 <button className="b-resume">
                   <a
                     href="https://docs.google.com/document/d/1UiG9E1EZsSIehbzVPrvFfXyfyQhO7GC_E66tvmv1vjc/edit?usp=sharing"
                     target="_blank"
                   >
-                    <i class="fa fa-file-text-o icon-m" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-file-text-o icon-m"
+                      aria-hidden="true"
+                    ></i>
                     Resume
                   </a>
                 </button>

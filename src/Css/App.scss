@@ -70,24 +70,25 @@ a * {
         width: 0%;
         height: 100%;
         position: absolute;
-        left: 0;
-        z-index: 0;
+        left: 20%;
+        z-index: 8;
         animation: move 3s ease-in-out;
       }
       .wrapper-blue {
         background-color: rgba(0, 0, 230, 0.1);
-        width: 10%;
+        width: 20%;
         height: 100%;
         position: absolute;
         left: 0;
-        z-index: 0;
+        top: 0;
+        z-index: 9;
       }
 
       // logo
       .logo {
         position: absolute;
         top: 20px;
-        left: 20px;
+        left: 35px;
         img {
           width: 60px;
           height: 60px;
@@ -126,13 +127,13 @@ a * {
         border-radius: 10px;
         background-color: rgba(0, 200, 0, 0.05);
         text-transform: uppercase;
-        z-index: 1;
+        z-index: 10;
       }
       .buttons {
         width: 600px;
         display: flex;
         justify-content: center;
-        z-index: 1;
+        z-index: 10;
         button {
           a {
             width: 100%;
