@@ -15,6 +15,8 @@
 - [x] Remove Header
 - [x] Add new header
 - [x] Update Header text
+- [x] Reduced image size by imgbot
+- [x] Merge imgbot to master
 
 ## Upcomming Updated
 
