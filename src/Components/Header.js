@@ -1,9 +1,20 @@
 import React, { useEffect } from "react";
+import LogRocket from "logrocket";
 // gsap
-import { gsap, TimelineMax, Expo, Ease } from "gsap";
+import { gsap, TimelineMax, TweenMax as T, Expo, Ease } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
+
 gsap.registerPlugin(CSSPlugin);
+LogRocket.init("o47tqc/pakkabaniya");
+
+LogRocket.identify("001", {
+  name: "tarun Gupta",
+  email: "001@pakkabaniya.ml",
+
+  // Add your own custom user variables here, ie:
+  subscriptionType: "pro",
+});
 
 const Header = () => {
   const t1 = new TimelineMax();
@@ -13,24 +24,8 @@ const Header = () => {
   }, []);
 
   const pageAnimation = () => {
-    t1.fromTo(
-      ".info",
-      1.5,
-      {
-        opacity: 0,
-        y: 50,
-        ease: "power2.inOut",
-      },
-      {
-        y: 0,
-        opacity: 1,
-      }
-    );
-    t1.from(".center-container", 1, {
-      delay: -0.3,
-      width: "0",
-      x: -20,
-      ease: "power2.inOut",
+    T.from(".wrapper", 1, {
+      width: "0%",
     });
   };
 
@@ -39,8 +34,8 @@ const Header = () => {
       <header>
         <div className="header">
           <div className="header-inner">
-            {/* <div className="wrapper"></div>
-              <div className="wrapper-blue"></div> */}
+            <div className="wrapper"></div>
+            <div className="wrapper-blue"></div>
             <div class="center-container"></div>
 
             <div className="logo">

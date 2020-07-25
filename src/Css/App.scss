@@ -72,20 +72,6 @@ a * {
       z-index: 8;
       animation: move 3s ease-in-out;
     }
-
-    .center-container {
-      position: absolute;
-      top: 25vh;
-      left: 15vw;
-      height: 50vh;
-      width: 40vw;
-      background-image: url("https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-      background-size: cover;
-      -webkit-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
-    }
-
     .wrapper-blue {
       background-color: rgba(0, 0, 230, 0.1);
       width: 20%;
