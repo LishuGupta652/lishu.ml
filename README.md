@@ -6,6 +6,7 @@
 
 ### Upcomming Updates
 
+- [x] Remove unused library
 - [ ] Remove flag
 - [ ] Remove Resume link
 - [ ] Remove Header
@@ -15,4 +16,3 @@
 - [ ] Change scroll bar width
 - [ ] Update Footer Texts
 - [ ] Update Color Schemes
-- [ ] Remove unused library
