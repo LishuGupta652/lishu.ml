@@ -7,8 +7,8 @@ import Skills from "./Components/Skills";
 import Works from "./Components/Works";
 import Footer from "./Components/Footer";
 
-// CSS Files
-import "./Css/App.css";
+import "./Css/App.scss";
+
 function App() {
   return (
     <div className="App">
