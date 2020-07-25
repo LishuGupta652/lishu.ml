@@ -11,7 +11,7 @@ import HeadShake from "react-reveal/HeadShake";
 
 const Works = () => {
   return (
-    <div className="work">
+    <div id="works" className="work">
       <section className="wrapper wrapper-1">
         <div className="heading container">
           <Bounce left>
