@@ -16,7 +16,6 @@ function App() {
       <Header />
       <Skills />
       <Works />
-
       <Footer />
     </div>
   );

@@ -9,7 +9,7 @@
 - [x] Remove unused library
 - [x] Update favicon
 - [ ] Remove flag
-- [ ] Remove Resume link
+- [ ] Update Skills Component
 - [ ] Remove Header
 - [ ] Add new header
 - [ ] Update Header text
