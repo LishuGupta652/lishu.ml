@@ -36,7 +36,6 @@ const Header = () => {
           <div className="header-inner">
             <div className="wrapper"></div>
             <div className="wrapper-blue"></div>
-            <div class="center-container"></div>
 
             <div className="logo">
               <img src={require("../image/logo.png")} alt="logo" />
