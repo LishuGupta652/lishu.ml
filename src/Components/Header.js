@@ -35,10 +35,23 @@ const Header = () => {
         <div className="header">
           <div className="header-inner">
             <div className="wrapper"></div>
-            <div className="wrapper-blue"></div>
 
             <div className="logo">
               <img src={require("../image/logo.png")} alt="logo" />
+            </div>
+
+            <div className="icons">
+              <i className="devicon-c-plain colored"></i>
+              <i className="devicon-cplusplus-plain colored"></i>
+              <i className="devicon-python-plain colored"></i>
+              <i className="devicon-java-plain colored"></i>
+              <i className="devicon-javascript-plain colored"></i>
+              <i className="devicon-html5-plain colored"></i>
+              <i className="devicon-css3-plain colored"></i>
+              <i className="devicon-javascript-plain colored"></i>
+              <i className="devicon-react-original colored"></i>
+              <i className="devicon-bootstrap-plain colored"></i>
+              <i className="devicon-android-plain-wordmark colored"></i>
             </div>
 
             <div className="nav">
