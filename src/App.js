@@ -1,24 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import PageProgress from 'react-page-progress'
+import PageProgress from "react-page-progress";
 //Components Imports
-import Header from './Components/Header'
-import Skills from './Components/Skills'
-import Works from './Components/Works'
-import Footer from './Components/Footer'
+import Header from "./Components/Header";
+import Skills from "./Components/Skills";
+import Works from "./Components/Works";
+import Footer from "./Components/Footer";
 
-// CSS Files
-import './Css/App.css'
+import "./Css/App.scss";
+
 function App() {
   return (
     <div className="App">
-      <PageProgress color={'skyblue'} height={5} />
+      <PageProgress color={"skyblue"} height={5} />
       <Header />
-      <Skills /> 
+      {/* <Skills /> */}
       <Works />
-
       <Footer />
-
     </div>
   );
 }
