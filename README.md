@@ -17,8 +17,10 @@
 - [x] Update Header text
 - [x] Reduced image size by imgbot
 - [x] Merge imgbot to master
+- [x] User Sass instead of Css (npm instal node-sass)
 
 ## Upcomming Updated
 
-- [ ] User Sass instead of Css (npm instal node-sass)
+- [ ] Adding framer motion
+- [ ] Adding gsap.
 - [ ] Update Color Schemes
