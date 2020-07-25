@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div>
-        <div style={{ textAlign: "center" }}>
+        <div className="git-icon">
           <a href="https://www.github.com/lishugupta652">
             <i className="fa fa-github" aria-hidden="true"></i>
           </a>
@@ -14,12 +14,6 @@ const Footer = () => {
           I Am Still Learning.
         </h1>
       </div>
-
-      {/* <div className="resume">
-        <a href="https://docs.google.com/document/d/e/2PACX-1vQAYtwHunE6q5hijPSPIjnDbJW6LViny7gwaY08_mH0FNFQgbhYOtP74du28FIRTwMaLXvJ6w8Ghqlb/pub">
-          Resume
-        </a>
-      </div> */}
     </div>
   );
 };
