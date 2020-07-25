@@ -7,6 +7,7 @@
 ### Upcomming Updates
 
 - [x] Remove unused library
+- [x] Update favicon
 - [ ] Remove flag
 - [ ] Remove Resume link
 - [ ] Remove Header
