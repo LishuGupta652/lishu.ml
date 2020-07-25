@@ -2,7 +2,7 @@
 
 # BRANCH UPDATE
 
-![Image](https://www.pakkabaniya.ml/static/media/hero-img.2ec26ea8.jpg "lishugupta")
+![Image](https://www.pakkabaniya.ml/favicon.ico "lishugupta")
 
 ### Upcomming Updates
 
@@ -10,10 +10,10 @@
 - [x] Update favicon
 - [x] Remove flag
 - [x] Update Footer Texts
-- [ ] Update Skills Component
-- [ ] Remove Header
+- [x] Change scroll bar width
+- [x] Remove Skills Component
+- [x] Remove Header
 - [ ] Add new header
 - [ ] Update Header text
 - [ ] User Sass instead of Css (npm instal node-sass)
-- [ ] Change scroll bar width
 - [ ] Update Color Schemes

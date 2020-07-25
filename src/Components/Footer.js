@@ -6,12 +6,12 @@ const Footer = () => {
       <div>
         <div style={{ textAlign: "center" }}>
           <a href="https://www.github.com/lishugupta652">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i className="fa fa-github" aria-hidden="true"></i>
           </a>
         </div>
         <h1>
-          <i class="fa fa-quote-left" aria-hidden="true"></i> Don't Judge Me I
-          Am Still Learning.
+          <i className="fa fa-quote-left" aria-hidden="true"></i> Don't Judge Me
+          I Am Still Learning.
         </h1>
       </div>
 

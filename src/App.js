@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <PageProgress color={"skyblue"} height={5} />
       <Header />
-      <Skills />
+      {/* <Skills /> */}
       <Works />
       <Footer />
     </div>
