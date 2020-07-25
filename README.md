@@ -4,7 +4,7 @@
 
 ![Image](https://www.pakkabaniya.ml/favicon.ico "lishugupta")
 
-### Upcomming Updates
+### Completed Updates
 
 - [x] Remove unused library
 - [x] Update favicon
@@ -13,7 +13,10 @@
 - [x] Change scroll bar width
 - [x] Remove Skills Component
 - [x] Remove Header
-- [ ] Add new header
-- [ ] Update Header text
+- [x] Add new header
+- [x] Update Header text
+
+## Upcomming Updated
+
 - [ ] User Sass instead of Css (npm instal node-sass)
 - [ ] Update Color Schemes
