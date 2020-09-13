@@ -6,6 +6,13 @@
   --fast-transition: 0.1s ease-in;
 }
 
+.dark-mode {
+  filter: invert(90%);
+}
+.a {
+  filter: invert(50%);
+}
+
 ::selection {
   background: black;
   color: white;
@@ -53,34 +60,34 @@ a * {
   position: relative;
   width: 100%;
   height: 85vh;
-   img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: contain;
-    }
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
 
-  .nav{
-      width: 100%;
-      padding: 30px 50px;
-      position: absolute;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      h1{
-          font-size: 16px;
-          text-transform: uppercase;
-          font-weight: 700;
-      }
+  .nav {
+    width: 100%;
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
   }
   .content {
     display: grid;
     place-items: center;
     height: 100%;
-    h1{
-        letter-spacing: 1px;
-        padding: 30px;
+    h1 {
+      letter-spacing: 1px;
+      padding: 30px;
     }
   }
 }

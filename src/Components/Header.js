@@ -36,7 +36,9 @@ const Header = () => {
       <header>
         <div className="header">
           <div className="content">
-            <motion.h1>Web and Android Developer</motion.h1>
+            <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+              Web and Android Developer
+            </motion.h1>
           </div>
           <div className="nav">
             <motion.div
@@ -51,7 +53,6 @@ const Header = () => {
                 right: 150,
                 bottom: 150,
               }}
-              transition={{ duration: 0.5 }}
               className="logo"
             >
               <img src={require("../image/logo.png")} alt="logo" />
@@ -62,6 +63,7 @@ const Header = () => {
                 opacity: [0, 1],
               }}
               whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
             >
               <Link to="/login">Login</Link>
             </motion.h1>
