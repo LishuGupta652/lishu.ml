@@ -36,7 +36,6 @@ html * {
   transition: var(--primary-transition);
   font-family: "Roboto", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
-  overflow-x: hidden;
 }
 a * {
   color: inherit;
@@ -56,17 +55,25 @@ a * {
   height: 85vh;
   .logo {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 100px;
+    width: 60px;
+    height: 60px;
+    left: 50px;
     top: 50px;
     overflow: hidden;
     img {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       object-fit: contain;
     }
+  }
+  .nav{
+      display: flex;
+  }
+  .content {
+    display: grid;
+    place-items: center;
+    height: 100%;
   }
 }
 

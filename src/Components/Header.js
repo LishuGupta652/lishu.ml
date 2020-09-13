@@ -36,17 +36,28 @@ const Header = () => {
         <div className="header">
           <motion.div
             animate={{
-              scale: [1, 2, 2, 1, 1],
               rotate: [0, 0, 270, 270, 0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             }}
-            transition={{ duration: 1.5 }}
+            whileHover={{ scale: 1.2 }}
+            drag
+            dragConstraints={{
+              top: -50,
+              left: -50,
+              right: 150,
+              bottom: 150,
+            }}
+            transition={{ duration: 0.5 }}
             className="logo"
           >
             <img src={require("../image/logo.png")} alt="logo" />
           </motion.div>
 
-          <div className="content">Web and Android Developer</div>
+          <div className="content">
+            <h1>Web and Android Developer</h1>
+          </div>
+          <div className="nav">
+            <h1>Login</h1>
+          </div>
         </div>
       </header>
     </>
