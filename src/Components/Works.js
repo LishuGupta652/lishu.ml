@@ -92,7 +92,7 @@ const Works = () => {
         <div className="container">
           <div className="img">
             <a
-              href="http://www.dwarfinc.ml"
+              href="http://www.dwarf.co.in"
               target="_blank"
               rel="noopener noreferrer"
             >

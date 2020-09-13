@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import LogRocket from "logrocket";
 // gsap
 import { gsap, TimelineMax, TweenMax as T, Expo, Ease } from "gsap";
@@ -32,8 +33,20 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="logo">
-          <img src={require("../image/logo.png")} alt="logo" />
+        <div className="header">
+          <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            }}
+            transition={{ duration: 1.5 }}
+            className="logo"
+          >
+            <img src={require("../image/logo.png")} alt="logo" />
+          </motion.div>
+
+          <div className="content">Web and Android Developer</div>
         </div>
       </header>
     </>
