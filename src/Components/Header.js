@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
 // gsap
 import { gsap, TimelineMax, TweenMax as T, Expo, Ease } from "gsap";
@@ -34,29 +35,36 @@ const Header = () => {
     <>
       <header>
         <div className="header">
-          <motion.div
-            animate={{
-              rotate: [0, 0, 270, 270, 0],
-            }}
-            whileHover={{ scale: 1.2 }}
-            drag
-            dragConstraints={{
-              top: -50,
-              left: -50,
-              right: 150,
-              bottom: 150,
-            }}
-            transition={{ duration: 0.5 }}
-            className="logo"
-          >
-            <img src={require("../image/logo.png")} alt="logo" />
-          </motion.div>
-
           <div className="content">
-            <h1>Web and Android Developer</h1>
+            <motion.h1>Web and Android Developer</motion.h1>
           </div>
           <div className="nav">
-            <h1>Login</h1>
+            <motion.div
+              animate={{
+                rotate: [0, 0, 270, 270, 0],
+              }}
+              whileHover={{ scale: 1.2 }}
+              drag
+              dragConstraints={{
+                top: -50,
+                left: -50,
+                right: 150,
+                bottom: 150,
+              }}
+              transition={{ duration: 0.5 }}
+              className="logo"
+            >
+              <img src={require("../image/logo.png")} alt="logo" />
+            </motion.div>
+            <motion.h1
+              animate={{
+                scale: [1, 0.5, 1],
+                opacity: [0, 1],
+              }}
+              whileHover={{ scale: 1.2 }}
+            >
+              <Link to="/login">Login</Link>
+            </motion.h1>
           </div>
         </div>
       </header>
