@@ -51,114 +51,6 @@ a * {
 
 /* Header */
 .header {
-  width: 100%;
-  height: 100vh;
-  background-color: #fcfcfc;
-  color: #212121;
-  .header-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    // wrapper
-    .wrapper {
-      background-color: rgba(0, 0, 230, 0.1);
-      height: 100%;
-      position: absolute;
-      left: 20%;
-      z-index: 8;
-      animation: move 3s ease-in-out;
-    }
-
-    // icons
-    .icons {
-      i {
-        width: 50px;
-      }
-    }
-
-    // logo
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 35px;
-      img {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-        border-radius: 50%;
-      }
-    }
-
-    // nav
-    .nav {
-      position: absolute;
-      top: 50px;
-      right: 40px;
-      ul {
-        display: flex;
-
-        li {
-          cursor: pointer;
-          font-size: 12px;
-          margin-right: 10px;
-          text-transform: uppercase;
-          padding: 5px;
-          a {
-            color: black;
-          }
-        }
-      }
-    }
-
-    .info {
-      padding: 5px 20px;
-      margin: 20px 30px;
-      text-align: center;
-      font-weight: 100;
-      color: rgba(22, 180, 22, 1);
-      border-radius: 10px;
-      background-color: rgba(0, 200, 0, 0.05);
-      text-transform: uppercase;
-      z-index: 10;
-    }
-    .buttons {
-      width: 600px;
-      display: flex;
-      justify-content: center;
-      z-index: 10;
-      padding: 0 20px;
-      button {
-        a {
-          width: 100%;
-          color: initial;
-        }
-        width: 30%;
-        padding: 5px 20px;
-        font-size: 22px;
-        margin-right: 10px;
-        border: 1px solid rgba(0, 200, 0, 0.5);
-        background-color: rgba(0, 200, 0, 0.05);
-        border-radius: 5px;
-        .icon-m {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
-
-@keyframes move {
-  0% {
-    width: 0%;
-    left: 0;
-  }
-  100% {
-    width: 100%;
-    left: 100%;
-  }
 }
 
 /* Skills */
@@ -314,6 +206,9 @@ a * {
   font-weight: 500;
   color: white;
 }
+.work .wrapper {
+  width: 100% !important;
+}
 .work .wrapper-1 {
   position: relative;
 }
@@ -348,8 +243,13 @@ a * {
   padding: 50px 0;
   color: #303952;
 }
+.work .wrapper .img {
+  width: 100%;
+  height: 100%;
+}
 .work .wrapper img {
-  box-shadow: 3px 3px 20px #121212;
+  max-height: 500px;
+  object-fit: contain;
 }
 .work .wrapper-1 {
   background-color: #f5cd79;

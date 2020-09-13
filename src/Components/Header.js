@@ -32,69 +32,8 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="header">
-          <div className="header-inner">
-            <div className="wrapper"></div>
-
-            <div className="logo">
-              <img src={require("../image/logo.png")} alt="logo" />
-            </div>
-
-            <div className="icons">
-              <i className="devicon-c-plain colored"></i>
-              <i className="devicon-cplusplus-plain colored"></i>
-              <i className="devicon-python-plain colored"></i>
-              <i className="devicon-java-plain colored"></i>
-              <i className="devicon-javascript-plain colored"></i>
-              <i className="devicon-html5-plain colored"></i>
-              <i className="devicon-css3-plain colored"></i>
-              <i className="devicon-javascript-plain colored"></i>
-              <i className="devicon-react-original colored"></i>
-              <i className="devicon-bootstrap-plain colored"></i>
-              <i className="devicon-android-plain-wordmark colored"></i>
-            </div>
-
-            <div className="nav">
-              <ul>
-                <li>
-                  <a href="#works">Works</a>
-                </li>
-                <li>
-                  <a href="#">Certifications</a>
-                </li>
-              </ul>
-            </div>
-
-            <h1 className="info">
-              Web Developer, Android Developer and Programmer.
-            </h1>
-
-            <div className="buttons">
-              <button className="b-github">
-                <a
-                  href="https://www.github.com/lishugupta652"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-github icon-m" aria-hidden="true"></i>
-                  Github
-                </a>
-              </button>
-              <button className="b-resume">
-                <a
-                  href="https://docs.google.com/document/d/1UiG9E1EZsSIehbzVPrvFfXyfyQhO7GC_E66tvmv1vjc/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i
-                    className="fa fa-file-text-o icon-m"
-                    aria-hidden="true"
-                  ></i>
-                  Resume
-                </a>
-              </button>
-            </div>
-          </div>
+        <div className="logo">
+          <img src={require("../image/logo.png")} alt="logo" />
         </div>
       </header>
     </>
