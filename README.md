@@ -18,9 +18,10 @@
 - [x] Reduced image size by imgbot
 - [x] Merge imgbot to master
 - [x] User Sass instead of Css (npm instal node-sass)
+- [x] Used Framer-motion
+- [x] Changed font to Montserrat Alternative
 
 ## Upcomming Updated
 
-- [ ] Adding framer motion
 - [ ] Adding gsap.
 - [ ] Update Color Schemes
