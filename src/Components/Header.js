@@ -40,10 +40,17 @@ const Header = () => {
               animate={{
                 rotate: [0, 0, 270, 270, 0],
               }}
+              drag
+              dragConstraints={{
+                top: -50,
+                left: -50,
+                right: 50,
+                bottom: 50,
+              }}
               whileHover={{ scale: 1.2 }}
               className="logo"
             >
-              <motion.img
+              {/* <motion.img
                 drag
                 dragConstraints={{
                   top: -50,
@@ -53,7 +60,8 @@ const Header = () => {
                 }}
                 src={require("../image/logo.png")}
                 alt="logo"
-              />
+              /> */}
+              <h6>LISHUGUPTA652@GMAIL.COM</h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <Link to="/login">Login</Link>
