@@ -23,7 +23,12 @@ const Header = () => {
     <>
       <header>
         <div className="header">
-          <motion.div animate={{ x: "-100%" }} className="animated-overlay" />
+          <motion.div
+            animate={{ x: "-100%" }}
+            transition={{ delay: 0.3 }}
+            className="animated-overlay"
+          />
+
           <div className="love">💓 WITH EASTER EGGS 💗</div>
           <div className="content">
             <motion.h1
@@ -36,20 +41,7 @@ const Header = () => {
             </motion.h1>
           </div>
           <div className="nav">
-            <motion.div
-              animate={{
-                rotate: [0, 0, 270, 270, 0],
-              }}
-              drag
-              dragConstraints={{
-                top: -50,
-                left: -50,
-                right: 50,
-                bottom: 50,
-              }}
-              whileHover={{ scale: 1.2 }}
-              className="logo"
-            >
+            <motion.div className="logo">
               {/* <motion.img
                 drag
                 dragConstraints={{
@@ -61,7 +53,22 @@ const Header = () => {
                 src={require("../image/logo.png")}
                 alt="logo"
               /> */}
-              <h6>LISHU GUPTA</h6>
+              <motion.h6
+                animate={{
+                  rotate: [0, 0, 270, 270, 0],
+                  opacity: [0, 1],
+                }}
+                drag
+                dragConstraints={{
+                  top: -50,
+                  left: -50,
+                  right: 50,
+                  bottom: 50,
+                }}
+                whileHover={{ scale: 1.2 }}
+              >
+                LISHU GUPTA
+              </motion.h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <Link to="/login">Login</Link>
