@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 import HeadShake from "react-reveal/HeadShake";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
@@ -49,9 +49,9 @@ const Works = () => {
     <div id="works" className="work">
       <section className="wrapper wrapper-1">
         <div className="heading container">
-          <Bounce left>
+          {/* <Bounce left> */}
             <h1>Works</h1>
-          </Bounce>
+          {/* </Bounce> */}
         </div>
         <div className="container">
           <div className="details">
@@ -291,9 +291,9 @@ const Works = () => {
 
       <section className="wrapper wrapper-6">
         <div className="heading container heading-python">
-          <Bounce left>
+          {/* <Bounce left> */}
             <h1 style={{ color: "#ff5e57" }}>Python</h1>
-          </Bounce>
+          {/* </Bounce> */}
         </div>
         <div className="container">
           <div className="details">

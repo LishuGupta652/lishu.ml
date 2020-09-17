@@ -66,8 +66,14 @@ const Header = () => {
                   bottom: 50,
                 }}
                 whileHover={{ scale: 1.2 }}
+                transition={{
+                  delay: 1,
+                  x: { type: "spring", stiffness: 100 },
+                  default: { duration: 2 },
+                }}
               >
-                LISHU GUPTA
+                <a className="logo" href="https://www.github.com/lishugupta652/" target="_blank" ><span role="img" aria-label="rocket">🚀</span>
+LISHU GUPTA <span role="img" aria-label="rocket">🚀</span></a>
               </motion.h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
