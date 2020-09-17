@@ -61,7 +61,7 @@ const Header = () => {
                 src={require("../image/logo.png")}
                 alt="logo"
               /> */}
-              <h6>LISHUGUPTA652@GMAIL.COM</h6>
+              <h6>LISHU GUPTA</h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <Link to="/login">Login</Link>
