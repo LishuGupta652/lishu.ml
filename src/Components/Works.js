@@ -11,6 +11,7 @@ import azaelindia from "../image/azaelindia.jpg";
 import payingguest from "../image/payingguest.jpg";
 import dwarfinc from "../image/DwarfINC.jpg";
 import whatsappclone from "../image/whatsappclone.jpg";
+import instagramclone from "../image/instagramclone.jpg";
 import awningApp from "../image/awningApp.jpg";
 import trex from "../image/trex.gif";
 
@@ -128,8 +129,10 @@ const Works = () => {
             <HeadShake>
               <h3>Paying Guest</h3>
             </HeadShake>
-            <p>Firebase Backend</p>
-            <p>React Frontend</p>
+            <p>Firebase backend</p>
+            <p>Firestore</p>
+            <p>React</p>
+            <p>Material ui</p>
           </div>
           <div className="img">
             <a
@@ -187,41 +190,61 @@ const Works = () => {
       </section>
 
       {/*  Whatsapp clone  */}
-      <section className="wrapper">
+      <section className="wrapper wrapper-whatsapp">
         <div className="container">
           <div className="details">
             <h3>Whatsapp Clone</h3>
+            <p>Firebase</p>
+            <p>React</p>
+            <p>Material ui</p>
           </div>
           <div className="img">
-            <motion.img
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-              }}
-              transition={{ duration: 0.1 }}
-              src={whatsappclone}
-              alt="Dwarf INC"
-            />
+            <a
+              href="https://whatsappcosmos.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                }}
+                transition={{ duration: 0.1 }}
+                src={whatsappclone}
+                alt="Dwarf INC"
+              />
+            </a>
           </div>
         </div>
       </section>
 
       {/*  Instagram clone  */}
-      <section className="wrapper">
+      <section className="wrapper wrapper-insta">
         <div className="container">
           <div className="img">
-            <motion.img
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-              }}
-              transition={{ duration: 0.1 }}
-              src={whatsappclone}
-              alt="Dwarf INC"
-            />
+            <a
+              href="https://instagramclonecosmos.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                }}
+                transition={{ duration: 0.1 }}
+                src={instagramclone}
+                alt="Dwarf INC"
+              />
+            </a>
           </div>
           <div className="details">
             <h3>Instagram Clone</h3>
+            <p>Firebase</p>
+            <p>Firestore</p>
+            <p>Cloud Storage GCP</p>
+            <p>React</p>
+            <p>Material ui</p>
           </div>
         </div>
       </section>
@@ -269,7 +292,7 @@ const Works = () => {
       <section className="wrapper wrapper-6">
         <div className="heading container heading-python">
           <Bounce left>
-            <h1 style={{ color: "#3c6382" }}>Python</h1>
+            <h1 style={{ color: "#ff5e57" }}>Python</h1>
           </Bounce>
         </div>
         <div className="container">
