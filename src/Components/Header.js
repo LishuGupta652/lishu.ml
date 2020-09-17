@@ -42,6 +42,7 @@ const Header = () => {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
               animate={{ opacity: 1, y: "-60px" }}
+              transition={{ ease: "easeInOut", duration: 0.25, delay: 1 }}
             >
               Web and Android Developer
             </motion.h1>
