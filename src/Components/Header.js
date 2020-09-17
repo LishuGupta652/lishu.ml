@@ -35,6 +35,7 @@ const Header = () => {
     <>
       <header>
         <div className="header">
+          <motion.div animate={{ x: "-100%" }} className="animated-overlay" />
           <div className="love">💓 WITH EASTER EGGS 💗</div>
           <div className="content">
             <motion.h1
@@ -51,25 +52,21 @@ const Header = () => {
                 rotate: [0, 0, 270, 270, 0],
               }}
               whileHover={{ scale: 1.2 }}
-              drag
-              dragConstraints={{
-                top: -50,
-                left: -50,
-                right: 150,
-                bottom: 150,
-              }}
               className="logo"
             >
-              <img src={require("../image/logo.png")} alt="logo" />
+              <motion.img
+                drag
+                dragConstraints={{
+                  top: -50,
+                  left: -50,
+                  right: 150,
+                  bottom: 150,
+                }}
+                src={require("../image/logo.png")}
+                alt="logo"
+              />
             </motion.div>
-            <motion.h1
-              animate={{
-                scale: [1, 0.5, 1],
-                opacity: [0, 1],
-              }}
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-            >
+            <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <Link to="/login">Login</Link>
             </motion.h1>
           </div>
