@@ -1,6 +1,7 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
+import gsap from "gsap";
 
 const Skills = () => {
   return (

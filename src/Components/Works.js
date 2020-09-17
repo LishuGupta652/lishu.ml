@@ -1,4 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+import Bounce from "react-reveal/Bounce";
+import HeadShake from "react-reveal/HeadShake";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
+
+// Images
 import dwarf from "../image/dwarf.jpg";
 import azaelindia from "../image/azaelindia.jpg";
 import payingguest from "../image/payingguest.jpg";
@@ -6,10 +12,38 @@ import dwarfinc from "../image/DwarfINC.jpg";
 import awningApp from "../image/awningApp.jpg";
 import trex from "../image/trex.gif";
 
-import Bounce from "react-reveal/Bounce";
-import HeadShake from "react-reveal/HeadShake";
-
 const Works = () => {
+  const sectionRef = useRef(null);
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.7,
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, 0.3, {
+      opacity: 1,
+      y: -60,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+
+  const fadeOut = (element) => {
+    gsap.to(element, 0.3, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+    });
+  };
+
+  intersection && intersection.intersectionRatio < 0.7
+    ? // Not reached
+      fadeOut(".fadeIn")
+    : fadeIn(".fadeIn"); // reached so animate
+
   return (
     <div id="works" className="work">
       <section className="wrapper wrapper-1">
@@ -43,7 +77,7 @@ const Works = () => {
         </div>
       </section>
 
-      <section className="wrapper wrapper-2">
+      <section ref={sectionRef} className="wrapper wrapper-2">
         <div className="container">
           <div className="img">
             <a
@@ -54,7 +88,7 @@ const Works = () => {
               <img src={dwarf} alt="The Dwarf Company" />
             </a>
           </div>
-          <div className="details">
+          <div className="details fadeIn">
             <HeadShake>
               <h3>The Dwarf Company</h3>
             </HeadShake>

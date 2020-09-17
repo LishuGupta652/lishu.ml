@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import PageProgress from "react-page-progress";
+
 //Components Imports
 import Header from "../Components/Header";
 import Skills from "../Components/Skills";
@@ -7,15 +8,15 @@ import Works from "../Components/Works";
 import Footer from "../Components/Footer";
 
 function Home() {
-    return (
-        <div>
-            <PageProgress color={"skyblue"} height={5} />
-            <Header />
-            {/* <Skills /> */}
-            <Works />
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+      <PageProgress color={"skyblue"} height={5} />
+      <Header />
+      {/* <Skills /> */}
+      <Works />
+      <Footer />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
