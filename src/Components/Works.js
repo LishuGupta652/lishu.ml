@@ -3,12 +3,14 @@ import Bounce from "react-reveal/Bounce";
 import HeadShake from "react-reveal/HeadShake";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
+import { motion } from "framer-motion";
 
 // Images
 import dwarf from "../image/dwarf.jpg";
 import azaelindia from "../image/azaelindia.jpg";
 import payingguest from "../image/payingguest.jpg";
 import dwarfinc from "../image/DwarfINC.jpg";
+import whatsappclone from "../image/whatsappclone.jpg";
 import awningApp from "../image/awningApp.jpg";
 import trex from "../image/trex.gif";
 
@@ -25,9 +27,7 @@ const Works = () => {
       opacity: 1,
       y: -60,
       ease: "power4.out",
-      stagger: {
-        amount: 0.3,
-      },
+      stagger: 0.1,
     });
   };
 
@@ -71,7 +71,18 @@ const Works = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={azaelindia} alt="Azael India" />
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={azaelindia}
+                alt="Azael India"
+              />
             </a>
           </div>
         </div>
@@ -85,13 +96,23 @@ const Works = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={dwarf} alt="The Dwarf Company" />
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={dwarf}
+                alt="The Dwarf Company"
+              />
             </a>
           </div>
           <div className="details fadeIn">
-            <HeadShake>
-              <h3>The Dwarf Company</h3>
-            </HeadShake>
+            <h3>The Dwarf Company</h3>
+
             <p>Startup's are love.</p>
             <p>React</p>
             <p>Netlify</p>
@@ -116,7 +137,18 @@ const Works = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={payingguest} alt="Paying Guest" />
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={payingguest}
+                alt="Paying Guest"
+              />
             </a>
           </div>
         </div>
@@ -130,7 +162,18 @@ const Works = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={dwarfinc} alt="Dwarf INC" />
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={dwarfinc}
+                alt="Dwarf INC"
+              />
             </a>
           </div>
           <div className="details">
@@ -143,7 +186,47 @@ const Works = () => {
         </div>
       </section>
 
-      <section className="wrapper wrapper-5">
+      {/*  Whatsapp clone  */}
+      <section className="wrapper">
+        <div className="container">
+          <div className="details">
+            <h3>Whatsapp Clone</h3>
+          </div>
+          <div className="img">
+            <motion.img
+              whileHover={{
+                scale: 1.02,
+                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+              }}
+              transition={{ duration: 0.1 }}
+              src={whatsappclone}
+              alt="Dwarf INC"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/*  Instagram clone  */}
+      <section className="wrapper">
+        <div className="container">
+          <div className="img">
+            <motion.img
+              whileHover={{
+                scale: 1.02,
+                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+              }}
+              transition={{ duration: 0.1 }}
+              src={whatsappclone}
+              alt="Dwarf INC"
+            />
+          </div>
+          <div className="details">
+            <h3>Instagram Clone</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="wrapper wrapper-5">
         <div className="heading container heading-android">
           <Bounce left>
             <h1 style={{ color: "#e77f67" }}>Android</h1>
@@ -164,7 +247,15 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <div className="android-img-container">
-                <img
+                <motion.img
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                    //   transitionEnd: {
+                    //     display: "none",
+                    //   },
+                  }}
+                  transition={{ duration: 0.1 }}
                   className="android-image"
                   src={awningApp}
                   alt="Paying Guest"
@@ -173,7 +264,7 @@ const Works = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="wrapper wrapper-6">
         <div className="heading container heading-python">
@@ -191,7 +282,18 @@ const Works = () => {
             <p>PIL</p>
           </div>
           <div className="img">
-            <img src={trex} alt="Dwarf INC" />
+            <motion.img
+              whileHover={{
+                scale: 1.02,
+                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                //   transitionEnd: {
+                //     display: "none",
+                //   },
+              }}
+              transition={{ duration: 0.1 }}
+              src={trex}
+              alt="Dwarf INC"
+            />
           </div>
         </div>
       </section>
