@@ -35,8 +35,13 @@ const Header = () => {
     <>
       <header>
         <div className="header">
+          <div className="love">💓 WITH EASTER EGGS 💗</div>
           <div className="content">
-            <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+            <motion.h1
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              animate={{ opacity: 1, y: "-60px" }}
+            >
               Web and Android Developer
             </motion.h1>
           </div>
