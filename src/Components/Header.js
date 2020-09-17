@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
 // gsap
-import { gsap, TimelineMax, TweenMax as T, Expo, Ease } from "gsap";
+import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 
@@ -19,18 +19,6 @@ LogRocket.identify("001", {
 });
 
 const Header = () => {
-  const t1 = new TimelineMax();
-
-  useEffect(() => {
-    pageAnimation();
-  }, []);
-
-  const pageAnimation = () => {
-    T.from(".wrapper", 1, {
-      width: "0%",
-    });
-  };
-
   return (
     <>
       <header>
