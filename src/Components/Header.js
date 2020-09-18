@@ -21,7 +21,7 @@ LogRocket.identify("001", {
 
 const Header = () => {
   const createHeart = () => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       const heart = document.createElement("div");
       const test = document.getElementById("createHeart");
 
@@ -29,6 +29,7 @@ const Header = () => {
       heart.classList.add("heart");
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = randomNumSec + "s";
+      heart.style.animationDelay = Math.random() * 1 + 2;
       const heartList = [
         "💘",
         "💖",
