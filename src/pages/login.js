@@ -2,9 +2,14 @@ import React from "react";
 import "../css/auth.scss";
 
 function Login() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Oops! This place ain't for you. Better luck next time 🤘👨‍🎤");
+    alert("Detecting IP Address 💞");
+  };
   return (
     <div className="login">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h3>Sign In</h3>
 
         <div className="form-group">
@@ -41,9 +46,9 @@ function Login() {
         <button type="submit" className="btn btn-primary btn-block">
           Submit
         </button>
-        <p className="forgot-password text-right">
+        {/* <p className="forgot-password text-right">
           Forgot <a href="#">password?</a>
-        </p>
+        </p> */}
       </form>
     </div>
   );

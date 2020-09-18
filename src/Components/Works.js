@@ -50,7 +50,7 @@ const Works = () => {
       <section className="wrapper wrapper-1">
         <div className="heading container">
           {/* <Bounce left> */}
-            <h1>Works</h1>
+          <h1>Works</h1>
           {/* </Bounce> */}
         </div>
         <div className="container">
@@ -89,75 +89,8 @@ const Works = () => {
         </div>
       </section>
 
-      <section ref={sectionRef} className="wrapper wrapper-2">
-        <div className="container">
-          <div className="img">
-            <a
-              href="https://www.dwarf.ga"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <motion.img
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
-                transition={{ duration: 0.1 }}
-                src={dwarf}
-                alt="The Dwarf Company"
-              />
-            </a>
-          </div>
-          <div className="details fadeIn">
-            <h3>The Dwarf Company</h3>
-
-            <p>Startup's are love.</p>
-            <p>React</p>
-            <p>Netlify</p>
-            <p>Contentfull</p>
-            <p>Firebase</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="wrapper wrapper-3">
-        <div className="container">
-          <div className="details">
-            <HeadShake>
-              <h3>Paying Guest</h3>
-            </HeadShake>
-            <p>Firebase backend</p>
-            <p>Firestore</p>
-            <p>React</p>
-            <p>Material ui</p>
-          </div>
-          <div className="img">
-            <a
-              href="http://www.payingguest.ml"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <motion.img
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
-                transition={{ duration: 0.1 }}
-                src={payingguest}
-                alt="Paying Guest"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="wrapper wrapper-4">
+      {/* DWARF */}
+      <section className="wrapper wrapper-dwarf">
         <div className="container">
           <div className="img">
             <a
@@ -184,7 +117,10 @@ const Works = () => {
               <h3>DWARF INC</h3>
             </HeadShake>
             <p>Smart India Project</p>
-            <p>Building a Smart Future</p>
+            <p>
+              Organisation Operating in the field of Construction, Fabrication,
+              Smart Gardens, Smart Library, Smart parking Solutions
+            </p>
           </div>
         </div>
       </section>
@@ -196,6 +132,10 @@ const Works = () => {
             <h3>Whatsapp Clone</h3>
             <p>Firebase</p>
             <p>React</p>
+            <p>Firestore</p>
+            <p>Cloud Storage GCP</p>
+            <p>Fetch API</p>
+            <p>Nodejs</p>
             <p>Material ui</p>
           </div>
           <div className="img">
@@ -243,8 +183,78 @@ const Works = () => {
             <p>Firebase</p>
             <p>Firestore</p>
             <p>Cloud Storage GCP</p>
+            <p>Fetch API</p>
+            <p>Nodejs</p>
             <p>React</p>
             <p>Material ui</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="wrapper wrapper-3">
+        <div className="container">
+          <div className="details">
+            <HeadShake>
+              <h3>Paying Guest</h3>
+            </HeadShake>
+            <p>Firebase backend</p>
+            <p>Firestore</p>
+            <p>React</p>
+            <p>Material ui</p>
+          </div>
+          <div className="img">
+            <a
+              href="http://www.payingguest.ml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={payingguest}
+                alt="Paying Guest"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section ref={sectionRef} className="wrapper dwarf-company">
+        <div className="container">
+          <div className="img">
+            <a
+              href="https://www.dwarf.ga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.img
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                  //   transitionEnd: {
+                  //     display: "none",
+                  //   },
+                }}
+                transition={{ duration: 0.1 }}
+                src={dwarf}
+                alt="The Dwarf Company"
+              />
+            </a>
+          </div>
+          <div className="details fadeIn">
+            <h3>The Dwarf Company</h3>
+
+            <p>Startup's are love.</p>
+            <p>React</p>
+            <p>Netlify</p>
+            <p>Contentfull</p>
+            <p>Firebase</p>
           </div>
         </div>
       </section>
@@ -289,10 +299,10 @@ const Works = () => {
         </div>
       </section> */}
 
-      <section className="wrapper wrapper-6">
+      <section className="wrapper wrapper-python">
         <div className="heading container heading-python">
           {/* <Bounce left> */}
-            <h1 style={{ color: "#ff5e57" }}>Python</h1>
+          <h1 style={{ color: "#30336b" }}>Python</h1>
           {/* </Bounce> */}
         </div>
         <div className="container">

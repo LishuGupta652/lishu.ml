@@ -163,9 +163,6 @@ a * {
 .work .heading-android {
   top: -23px;
 }
-.work .wrapper-6 {
-  position: relative;
-}
 .work .heading-python {
   top: -23px;
 }
@@ -206,8 +203,8 @@ a * {
 .work .wrapper-1 {
   background-color: #fbc531;
 }
-.work .wrapper-2 {
-  background-color: #487eb0;
+.work .dwarf-company {
+  background-color: #30336b;
   color: whitesmoke;
 }
 
@@ -216,7 +213,7 @@ a * {
   color: #121212;
 }
 
-.work .wrapper-4 {
+.work .wrapper-dwarf {
   background-color: #e77f67;
 }
 .work .wrapper-whatsapp {
@@ -229,8 +226,10 @@ a * {
   background-color: #3c6382;
   color: white;
 }
-.work .wrapper-6 {
-  background-color: #786fa6;
+
+.work .wrapper-python {
+  position: relative;
+  background-color: #f0932b;
   color: white;
 }
 @media (max-width: 950px) {
