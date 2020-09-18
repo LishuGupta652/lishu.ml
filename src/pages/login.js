@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/auth.scss";
+import "../css/auth.scss";
 
 function Login() {
   return (

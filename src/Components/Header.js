@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
+// components
+import Easter from "./UI/Easter";
 // gsap
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
@@ -19,6 +21,37 @@ LogRocket.identify("001", {
 });
 
 const Header = () => {
+  const createHeart = () => {
+    for (let i = 0; i < 10; i++) {
+      const heart = document.createElement("div");
+      const test = document.getElementById("createHeart");
+
+      const randomNumSec = Math.random() * 1 + 3;
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = randomNumSec + "s";
+      const heartList = [
+        "♥",
+        "💘",
+        "💖",
+        "💗",
+        "💓",
+        "💙",
+        "💚",
+        "💛",
+        "💜",
+        "🧡",
+        "💝",
+        "🖤",
+      ];
+      heart.innerText = heartList[Math.floor(Math.random() * heartList.length)];
+      test.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, randomNumSec * 1000);
+    }
+  };
   return (
     <>
       <header>
@@ -29,13 +62,16 @@ const Header = () => {
             className="animated-overlay"
           />
 
-          <div className="love">💓 WITH EASTER EGGS 💗</div>
+          <div className="love">
+            <Easter />
+          </div>
           <div className="content">
             <motion.h1
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
               animate={{ opacity: 1, y: "-60px" }}
               transition={{ ease: "easeInOut", duration: 0.25, delay: 1 }}
+              onClick={createHeart}
             >
               Web and Android Developer
             </motion.h1>
@@ -72,8 +108,19 @@ const Header = () => {
                   default: { duration: 2 },
                 }}
               >
-                <a className="logo" href="https://www.github.com/lishugupta652/" target="_blank" ><span role="img" aria-label="rocket">🚀</span>
-LISHU GUPTA <span role="img" aria-label="rocket">🚀</span></a>
+                <a
+                  className="logo"
+                  href="https://www.github.com/lishugupta652/"
+                  target="_blank"
+                >
+                  <span role="img" aria-label="rocket">
+                    🚀
+                  </span>
+                  LISHU GUPTA{" "}
+                  <span role="img" aria-label="rocket">
+                    🚀
+                  </span>
+                </a>
               </motion.h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
