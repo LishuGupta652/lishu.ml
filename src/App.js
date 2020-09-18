@@ -6,7 +6,7 @@ import Test from "./pages/test";
 
 // CSS IMPORTS
 import "./css/App.scss";
-import "./css/easter.scss";
+import "./css/UI.scss";
 
 function App() {
   return (

@@ -12,6 +12,7 @@
   button:hover {
     padding: 20px 60px;
   }
+
   .heart {
     position: fixed;
     top: -1vh;
@@ -22,7 +23,7 @@
   }
   @keyframes fall {
     to {
-      transform: translateY(105vh);
+      transform: translateY(105vh) scale(0.5);
     }
   }
 }

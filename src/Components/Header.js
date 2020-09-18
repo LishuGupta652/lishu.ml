@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
 // components
-import Easter from "./UI/Easter";
 // gsap
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
@@ -31,7 +30,6 @@ const Header = () => {
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = randomNumSec + "s";
       const heartList = [
-        "♥",
         "💘",
         "💖",
         "💗",
@@ -42,7 +40,6 @@ const Header = () => {
         "💜",
         "🧡",
         "💝",
-        "🖤",
       ];
       heart.innerText = heartList[Math.floor(Math.random() * heartList.length)];
       test.appendChild(heart);
@@ -52,6 +49,9 @@ const Header = () => {
       }, randomNumSec * 1000);
     }
   };
+  React.useEffect(() => {
+    createHeart();
+  }, []);
   return (
     <>
       <header>
@@ -62,9 +62,7 @@ const Header = () => {
             className="animated-overlay"
           />
 
-          <div className="love">
-            <Easter />
-          </div>
+          <div className="love">🐣 WITH EASTER LOVE🐣</div>
           <div className="content">
             <motion.h1
               whileHover={{ scale: 1.2 }}
@@ -90,8 +88,9 @@ const Header = () => {
                 alt="logo"
               /> */}
               <motion.h6
+                className="logo"
                 animate={{
-                  rotate: [0, 0, 270, 270, 0],
+                  y: -10,
                   opacity: [0, 1],
                 }}
                 drag
@@ -105,14 +104,10 @@ const Header = () => {
                 transition={{
                   delay: 1,
                   x: { type: "spring", stiffness: 100 },
-                  default: { duration: 2 },
+                  default: { duration: 0.3 },
                 }}
               >
-                <a
-                  className="logo"
-                  href="https://www.github.com/lishugupta652/"
-                  target="_blank"
-                >
+                <a href="https://www.github.com/lishugupta652/" target="_blank">
                   <span role="img" aria-label="rocket">
                     🚀
                   </span>
@@ -127,6 +122,7 @@ const Header = () => {
               <Link to="/login">Login</Link>
             </motion.h1>
           </div>
+          <div className="create-heart-container" id="createHeart"></div>
         </div>
       </header>
     </>

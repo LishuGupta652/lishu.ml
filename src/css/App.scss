@@ -90,8 +90,13 @@ a * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo{
+    z-index: 10;
+    .logo {
+      position: relative;
+      top: 5px;
+      a {
         color: white;
+      }
     }
     h1 {
       font-size: 16px;
@@ -111,12 +116,14 @@ a * {
     display: grid;
     place-items: center;
     height: 100%;
+    z-index: 10;
     h1 {
       position: relative;
       opacity: 0;
       top: 60px;
       letter-spacing: 1px;
       padding: 30px;
+      z-index: 10;
     }
   }
 }
