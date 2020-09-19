@@ -4,10 +4,12 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import About from "./pages/about";
 import Test from "./pages/test";
+import NotFound from "./pages/notfound";
 
 // CSS IMPORTS
 import "./css/App.scss";
 import "./css/UI.scss";
+import "./css/about.scss";
 
 function App() {
   return (
@@ -18,13 +20,16 @@ function App() {
             <Test />
           </Route>
           <Route path="/about">
-            <Test />
+            <About />
           </Route>
           <Route path="/login">
             <Login />
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route>
+            <NotFound />
           </Route>
         </Switch>
       </Router>
