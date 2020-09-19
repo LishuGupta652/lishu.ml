@@ -1,11 +1,15 @@
 import React from "react";
 import "../css/auth.scss";
+import { useHistory } from "react-router-dom";
 
 function Login() {
+  const history = useHistory();
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Oops! This place ain't for you. Better luck next time 🤘👨‍🎤");
     alert("Detecting IP Address 💞");
+    alert("Please check your IP Address again or try again later.");
+    alert("Redirecting you to my new works. Thanks for exploring my site 🚀");
+    history.push("/test");
   };
   return (
     <div className="login">
