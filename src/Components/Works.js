@@ -48,7 +48,7 @@ const Works = () => {
   return (
     <div id="works" className="work">
       <section className="wrapper wrapper-1">
-        <div className="heading container">
+        <div className="heading">
           {/* <Bounce left> */}
           <h1>Works</h1>
           {/* </Bounce> */}
@@ -300,7 +300,7 @@ const Works = () => {
       </section> */}
 
       <section className="wrapper wrapper-python">
-        <div className="heading container heading-python">
+        <div className="heading heading-python">
           {/* <Bounce left> */}
           <h1 style={{ color: "#30336b" }}>Python</h1>
           {/* </Bounce> */}

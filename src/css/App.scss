@@ -136,6 +136,7 @@ a * {
 }
 
 /* Work */
+
 .work {
   position: relative;
   width: 100%;
@@ -249,7 +250,7 @@ a * {
     margin: 0px auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .wrapper-5 h1 {
     font-size: 50px;
     margin-top: 10px;
@@ -258,6 +259,10 @@ a * {
   .wrapper-6 h1 {
     font-size: 50px;
     margin-top: 10px;
+  }
+  .work h1 {
+    font-size: 60px;
+    width: fit-content;
   }
 }
 /* end of work */
