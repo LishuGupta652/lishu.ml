@@ -117,13 +117,14 @@ a * {
     place-items: center;
     height: 100%;
     z-index: 10;
+    overflow: hidden;
     h1 {
       position: relative;
-      opacity: 0;
-      top: 60px;
       letter-spacing: 1px;
       padding: 30px;
       z-index: 10;
+      opacity: 0;
+      text-align: center;
     }
   }
 }

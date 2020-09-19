@@ -53,6 +53,25 @@ const Header = () => {
   React.useEffect(() => {
     createHeart();
   }, []);
+
+  // Gsap Animation
+  React.useEffect(() => {
+    gsap.fromTo(
+      ".hidetext",
+      0.5,
+      {
+        y: "60px",
+        opacity: 0,
+        ease: "Expo.easeInOut",
+      },
+      {
+        delay: 1,
+        y: "0px",
+        opacity: 1,
+        ease: "Expo.easeInOut",
+      }
+    );
+  }, []);
   return (
     <>
       <header>
@@ -65,15 +84,7 @@ const Header = () => {
 
           <div className="love">🐣 WITH EASTER LOVE🐣</div>
           <div className="content">
-            <motion.h1
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-              animate={{ opacity: 1, y: "-60px" }}
-              transition={{ ease: "easeInOut", duration: 0.25, delay: 1 }}
-              onClick={createHeart}
-            >
-              Web and Android Developer
-            </motion.h1>
+            <h1 className="hidetext">Web and Android Developer</h1>
           </div>
           <div className="nav">
             <motion.div className="logo">
@@ -112,7 +123,7 @@ const Header = () => {
                   <span role="img" aria-label="rocket">
                     🚀
                   </span>
-                  LISHU GUPTA{" "}
+                  LISHU GUPTA
                   <span role="img" aria-label="rocket">
                     🚀
                   </span>
@@ -120,7 +131,7 @@ const Header = () => {
               </motion.h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <Link to="/login">Login</Link>
+              <Link to="/test">Login</Link>
             </motion.h1>
           </div>
           <div className="create-heart-container" id="createHeart"></div>

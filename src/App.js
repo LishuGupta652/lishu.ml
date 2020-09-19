@@ -10,6 +10,7 @@ import NotFound from "./pages/notfound";
 import "./css/App.scss";
 import "./css/UI.scss";
 import "./css/about.scss";
+import "./css/test.scss";
 
 function App() {
   return (
