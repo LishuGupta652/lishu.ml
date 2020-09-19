@@ -84,7 +84,7 @@ const Header = () => {
 
           <div className="love">🐣 WITH EASTER LOVE🐣</div>
           <div className="content">
-            <h1 className="hidetext">Web and Android Developer</h1>
+            <h1 className="hidetext" onClick={createHeart}>Web and Android Developer</h1>
           </div>
           <div className="nav">
             <motion.div className="logo">
@@ -131,7 +131,7 @@ const Header = () => {
               </motion.h6>
             </motion.div>
             <motion.h1 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <Link to="/test">Login</Link>
+              <Link to="/login">Login</Link>
             </motion.h1>
           </div>
           <div className="create-heart-container" id="createHeart"></div>
