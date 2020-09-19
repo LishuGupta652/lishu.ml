@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/home";
 import Login from "./pages/login";
+import About from "./pages/about";
 import Test from "./pages/test";
 
 // CSS IMPORTS
@@ -14,6 +15,9 @@ function App() {
       <Router>
         <Switch>
           <Route path="/test">
+            <Test />
+          </Route>
+          <Route path="/about">
             <Test />
           </Route>
           <Route path="/login">
