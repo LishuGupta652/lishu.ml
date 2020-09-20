@@ -3,7 +3,7 @@ import PageProgress from "react-page-progress";
 
 //Components Imports
 import Header from "../Components/Header";
-import Skills from "../Components/Skills";
+// import Skills from "../Components/Skills";
 import Works from "../Components/Works";
 import Footer from "../Components/Footer";
 

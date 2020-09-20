@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 // import Bounce from "react-reveal/Bounce";
 // import HeadShake from "react-reveal/HeadShake";
 // import { useIntersection } from "react-use";
@@ -13,7 +13,7 @@ import payingguest from "../image/payingguest.jpg";
 import dwarfinc from "../image/DwarfINC.jpg";
 import whatsappclone from "../image/whatsappclone.jpg";
 import instagramclone from "../image/instagramclone.jpg";
-import awningApp from "../image/awningApp.jpg";
+// import awningApp from "../image/awningApp.jpg";
 import trex from "../image/trex.gif";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -120,7 +120,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -147,7 +147,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -192,7 +192,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -216,7 +216,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -256,7 +256,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -282,7 +282,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
-                class="skewElem"
+                className="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -363,7 +363,7 @@ const Works = () => {
           </div>
           <div className="img">
             <motion.img
-              class="skewElem"
+              className="skewElem"
               whileHover={{
                 scale: 1.02,
                 boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",

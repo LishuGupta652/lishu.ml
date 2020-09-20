@@ -7,7 +7,7 @@ function About() {
     let i = 0;
     const interval = setInterval(() => {
       container.innerText += text.charAt(i++);
-      if (i == text.length) {
+      if (i === text.length) {
         clearInterval(interval);
       }
     }, 100);
@@ -18,7 +18,7 @@ function About() {
   return (
     <div className="about">
       <div className="about__header">
-        <h1 id="about_contentText"></h1>
+        <h1 id="about_contentText">.</h1>
       </div>
       <div className="about__content">
         <p id="Lorem">

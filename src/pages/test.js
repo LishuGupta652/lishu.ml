@@ -38,10 +38,18 @@ function Test() {
             </div>
 
             <div className="menu">
-              <ion-icon name="ios-menu">🍔</ion-icon>
+              <ion-icon name="ios-menu">
+                <span role="img" aria-label="sheep">
+                  🍔
+                </span>
+              </ion-icon>
             </div>
             <div className="search">
-              <ion-icon name="ios-search">🔍</ion-icon>
+              <ion-icon name="ios-search">
+                <span role="img" aria-label="sheep">
+                  🔍
+                </span>
+              </ion-icon>
             </div>
           </div>
 
@@ -95,8 +103,16 @@ function Test() {
 
             <div className="nav">
               <ul>
-                <li>👆</li>
-                <li>👇</li>
+                <li>
+                  <span role="img" aria-label="sheep">
+                    👆
+                  </span>
+                </li>
+                <li>
+                  <span role="img" aria-label="sheep">
+                    👇
+                  </span>
+                </li>
               </ul>
 
               <div className="bottomnav-img"></div>

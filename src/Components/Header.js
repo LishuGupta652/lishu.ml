@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
@@ -21,22 +21,7 @@ LogRocket.identify("001", {
 
 const Header = () => {
   const headerRef = useRef(null);
-  const [background, setBackground] = useState("#121212");
 
-  const toggleBackground = () => {
-    const color = background !== "#121212" ? "#121212" : "#f5f5f5";
-    setBackground(color);
-  };
-
-  // Targeting the header ref for animation
-  useEffect(() => {
-    gsap.to(headerRef.current, {
-      duration: 0.15,
-      backgroundColor: background,
-      ease: "none",
-    });
-    console.log(background);
-  }, [background]);
 
   // Targeting the header ref for animation
   //   useEffect(() => {
@@ -47,6 +32,7 @@ const Header = () => {
   //       delay: 0.12,
   //     });
   //   }, []);
+
   // Create Hearts when use first enter the component
   useEffect(() => {
     createHeart();
@@ -100,7 +86,6 @@ const Header = () => {
         heart.remove();
       }, randomNumSec * 1000);
     }
-    toggleBackground();
   };
   return (
     <>
@@ -112,7 +97,8 @@ const Header = () => {
             className="animated-overlay"
           />
 
-          <div className="love">🐣 WITH EASTER LOVE🐣</div>
+          <div className="love"><span role="img" aria-label="sheep">🐣</span> WITH EASTER LOVE<span role="img" aria-label="sheep">🐣</span>
+</div>
           <div className="content">
             <h1 className="hidetext" onClick={createHeart}>
               Web and Android Developer
@@ -151,7 +137,7 @@ const Header = () => {
                   default: { duration: 0.3 },
                 }}
               >
-                <a href="https://www.github.com/lishugupta652/" target="_blank">
+                <a href="https://www.github.com/lishugupta652/" target="_blank" rel="noopener noreferrer">
                   <span role="img" aria-label="rocket">
                     🚀
                   </span>
