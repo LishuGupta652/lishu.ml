@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import LogRocket from "logrocket";
@@ -20,6 +20,57 @@ LogRocket.identify("001", {
 });
 
 const Header = () => {
+  const headerRef = useRef(null);
+  const [background, setBackground] = useState("#121212");
+
+  const toggleBackground = () => {
+    const color = background !== "#121212" ? "#121212" : "#f5f5f5";
+    setBackground(color);
+  };
+
+  // Targeting the header ref for animation
+  useEffect(() => {
+    gsap.to(headerRef.current, {
+      duration: 0.15,
+      backgroundColor: background,
+      ease: "none",
+    });
+    console.log(background);
+  }, [background]);
+
+  // Targeting the header ref for animation
+  //   useEffect(() => {
+  //     gsap.from(headerRef.current, {
+  //       duration: 0.15,
+  //       autoAlpha: 0,
+  //       ease: "none",
+  //       delay: 0.12,
+  //     });
+  //   }, []);
+  // Create Hearts when use first enter the component
+  useEffect(() => {
+    createHeart();
+  }, []);
+
+  // Gsap Animation
+  useEffect(() => {
+    gsap.fromTo(
+      ".hidetext",
+      0.5,
+      {
+        y: "60px",
+        opacity: 0,
+        ease: "Expo.easeInOut",
+      },
+      {
+        delay: 1,
+        y: "0px",
+        opacity: 1,
+        ease: "Expo.easeInOut",
+      }
+    );
+  }, []);
+
   const createHeart = () => {
     for (let i = 0; i < 20; i++) {
       const heart = document.createElement("div");
@@ -49,32 +100,11 @@ const Header = () => {
         heart.remove();
       }, randomNumSec * 1000);
     }
+    toggleBackground();
   };
-  React.useEffect(() => {
-    createHeart();
-  }, []);
-
-  // Gsap Animation
-  React.useEffect(() => {
-    gsap.fromTo(
-      ".hidetext",
-      0.5,
-      {
-        y: "60px",
-        opacity: 0,
-        ease: "Expo.easeInOut",
-      },
-      {
-        delay: 1,
-        y: "0px",
-        opacity: 1,
-        ease: "Expo.easeInOut",
-      }
-    );
-  }, []);
   return (
     <>
-      <header>
+      <header ref={headerRef}>
         <div className="header">
           <motion.div
             animate={{ x: "-100%" }}
@@ -84,7 +114,9 @@ const Header = () => {
 
           <div className="love">🐣 WITH EASTER LOVE🐣</div>
           <div className="content">
-            <h1 className="hidetext" onClick={createHeart}>Web and Android Developer</h1>
+            <h1 className="hidetext" onClick={createHeart}>
+              Web and Android Developer
+            </h1>
           </div>
           <div className="nav">
             <motion.div className="logo">

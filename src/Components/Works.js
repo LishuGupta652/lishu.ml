@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 // import Bounce from "react-reveal/Bounce";
 import HeadShake from "react-reveal/HeadShake";
-import { useIntersection } from "react-use";
+// import { useIntersection } from "react-use";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 
 // Images
@@ -15,45 +16,96 @@ import instagramclone from "../image/instagramclone.jpg";
 import awningApp from "../image/awningApp.jpg";
 import trex from "../image/trex.gif";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Works = () => {
-  const sectionRef = useRef(null);
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.7,
-  });
+  //   const sectionRef = useRef(null);
+  const wrapperRef = useRef(null);
 
-  const fadeIn = (element) => {
-    gsap.to(element, 0.3, {
-      opacity: 1,
-      y: -60,
-      ease: "power4.out",
-      stagger: 0.1,
+  useEffect(() => {
+    gsap.fromTo(
+      wrapperRef.current,
+      { autoAlpha: 0, y: 20, scale: 0.95 },
+      {
+        duration: 0.15,
+        autoAlpha: 1,
+        scale: 1,
+        y: 0,
+        ease: "none",
+        scrollTrigger: {
+          id: "sectionref",
+          trigger: wrapperRef.current,
+          toggleActions: "play none none reverse",
+          start: "top center",
+          //   end: "bottom center",
+          //   toggleClass: "active",
+          markers: true,
+        },
+      }
+    );
+
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+      clamp = gsap.utils.clamp(-40, 40); // don't let the skew go beyond 20 degrees.
+
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+        // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
     });
-  };
 
-  const fadeOut = (element) => {
-    gsap.to(element, 0.3, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out",
-    });
-  };
+    // make the right edge "stick" to the scroll bar. force3D: true improves performance
+    gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+  }, []);
 
-  intersection && intersection.intersectionRatio < 0.7
-    ? // Not reached
-      fadeOut(".fadeIn")
-    : fadeIn(".fadeIn"); // reached so animate
+  //   const intersection = useIntersection(sectionRef, {
+  //     root: null,
+  //     rootMargin: "0px",
+  //     threshold: 0.7,
+  //   });
+
+  //   const fadeIn = (element) => {
+  //     gsap.to(element, 0.3, {
+  //       opacity: 1,
+  //       y: -60,
+  //       ease: "power4.out",
+  //       stagger: 0.1,
+  //     });
+  //   };
+
+  //   const fadeOut = (element) => {
+  //     gsap.to(element, 0.3, {
+  //       opacity: 0,
+  //       y: -20,
+  //       ease: "power4.out",
+  //     });
+  //   };
+
+  //   intersection && intersection.intersectionRatio < 0.7
+  //     ? // Not reached
+  //       fadeOut(".fadeIn")
+  //     : fadeIn(".fadeIn"); // reached so animate
 
   return (
     <div id="works" className="work">
-      <section className="wrapper wrapper-1">
+      <section className="wrapper wrapper-azael">
         <div className="heading">
           {/* <Bounce left> */}
           <h1>Works</h1>
           {/* </Bounce> */}
         </div>
-        <div className="container">
+        <div className="container" ref={wrapperRef}>
           <div className="details">
             <HeadShake>
               <h3>Azael India</h3>
@@ -225,7 +277,7 @@ const Works = () => {
         </div>
       </section>
 
-      <section ref={sectionRef} className="wrapper dwarf-company">
+      <section className="wrapper dwarf-company">
         <div className="container">
           <div className="img">
             <a
