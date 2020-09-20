@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 // import Bounce from "react-reveal/Bounce";
-import HeadShake from "react-reveal/HeadShake";
+// import HeadShake from "react-reveal/HeadShake";
 // import { useIntersection } from "react-use";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,22 +31,21 @@ const Works = () => {
         autoAlpha: 1,
         scale: 1,
         y: 0,
-        ease: "none",
+        ease: "power3",
         scrollTrigger: {
           id: "sectionref",
           trigger: wrapperRef.current,
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
           start: "top center",
           //   end: "bottom center",
           //   toggleClass: "active",
-          markers: true,
         },
       }
     );
 
     let proxy = { skew: 0 },
       skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-      clamp = gsap.utils.clamp(-40, 40); // don't let the skew go beyond 20 degrees.
+      clamp = gsap.utils.clamp(-15, 15); // don't let the skew go beyond 20 degrees.
 
     ScrollTrigger.create({
       onUpdate: (self) => {
@@ -101,15 +100,11 @@ const Works = () => {
     <div id="works" className="work">
       <section className="wrapper wrapper-azael">
         <div className="heading">
-          {/* <Bounce left> */}
           <h1>Works</h1>
-          {/* </Bounce> */}
         </div>
         <div className="container" ref={wrapperRef}>
           <div className="details">
-            <HeadShake>
-              <h3>Azael India</h3>
-            </HeadShake>
+            <h3>Azael India</h3>
             <p>PHP</p>
             <p>
               Organization Operating In The Field of manufacturing, fabrication
@@ -125,6 +120,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -151,6 +147,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -165,9 +162,7 @@ const Works = () => {
             </a>
           </div>
           <div className="details">
-            <HeadShake>
-              <h3>DWARF INC</h3>
-            </HeadShake>
+            <h3>DWARF INC</h3>
             <p>Smart India Project</p>
             <p>
               Organisation Operating in the field of Construction, Fabrication,
@@ -197,6 +192,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -220,6 +216,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -246,9 +243,7 @@ const Works = () => {
       <section className="wrapper wrapper-3">
         <div className="container">
           <div className="details">
-            <HeadShake>
-              <h3>Paying Guest</h3>
-            </HeadShake>
+            <h3>Paying Guest</h3>
             <p>Firebase backend</p>
             <p>Firestore</p>
             <p>React</p>
@@ -261,6 +256,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -286,6 +282,7 @@ const Works = () => {
               rel="noopener noreferrer"
             >
               <motion.img
+                class="skewElem"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
@@ -319,9 +316,9 @@ const Works = () => {
         </div>
         <div className="container">
           <div className="details">
-            <HeadShake>
+        
               <h3>Awning Manufacture</h3>
-            </HeadShake>
+          
             <p>Android Studio</p>
             <p></p>
           </div>
@@ -359,15 +356,14 @@ const Works = () => {
         </div>
         <div className="container">
           <div className="details">
-            <HeadShake>
-              <h3>Automated Gaming</h3>
-            </HeadShake>
+            <h3>Automated Gaming</h3>
             <p>Python</p>
             <p>PyAutoGUI</p>
             <p>PIL</p>
           </div>
           <div className="img">
             <motion.img
+              class="skewElem"
               whileHover={{
                 scale: 1.02,
                 boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
