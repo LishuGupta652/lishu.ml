@@ -204,7 +204,6 @@ a * {
 
 .work .wrapper-azael {
   background-color: #fbc531;
-  
 }
 .work .wrapper-azael .active {
   background-color: #121212;
@@ -297,4 +296,14 @@ a * {
   a {
     color: white;
   }
+}
+.loading-suspense {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: #313131;
+  color: #fff;
+  font-size: 2rem;
+  place-items: center;
+  z-index: 10;
 }
