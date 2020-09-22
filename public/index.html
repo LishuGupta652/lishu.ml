@@ -16,11 +16,31 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 	<title>Lishu gupta | Portfolio</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.loading-suspense {
+			display: grid;
+			width: 100vw;
+			height: 100vh;
+			background-color: #212121;
+			color: #fff;
+			font-size: 2rem;
+			place-items: center;
+			z-index: 10;
+		}
+	</style>
 </head>
 
 <body>
 	<noscript>You need to enable JavaScript to run this app.</noscript>
-	<div id="root"></div>
+	<div id="root">
+		<div class="loading-suspense">Loading ...</div>
+	</div>
 	<script type="text/javascript">
 		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
 	{widgetcode:"2f92f6eb9618197935112e11f9af1bf6d9199b1079274c21b00f609ee05c6ddcd33976e473cc98a862a1ea8d8b19cb29", values:{},ready:function(){}};
@@ -28,7 +48,7 @@
 	s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 	</script>
 
-    <script src="calm.js"></script>
+	<script src="calm.js"></script>
 	<script>
 		document.onkeypress = function(e) {
         e = e || window.event;
