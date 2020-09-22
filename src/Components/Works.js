@@ -14,7 +14,8 @@ import dwarfinc from "../image/DwarfINC.jpg";
 import whatsappclone from "../image/whatsappclone.jpg";
 import instagramclone from "../image/instagramclone.jpg";
 // import awningApp from "../image/awningApp.jpg";
-import trex from "../image/trex.gif";
+// import trex from "../image/trex.gif";
+import trex from "../image/dino.webm";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -362,19 +363,7 @@ const Works = () => {
             <p>PIL</p>
           </div>
           <div className="img">
-            <motion.img
-              className="skewElem"
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                //   transitionEnd: {
-                //     display: "none",
-                //   },
-              }}
-              transition={{ duration: 0.1 }}
-              src={trex}
-              alt="Dwarf INC"
-            />
+            <video loop autostart autoPlay src={trex} type="video/mp4" />
           </div>
         </div>
       </section>
