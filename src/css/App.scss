@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 :root {
@@ -42,7 +41,6 @@ html * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: var(--primary-transition);
-  font-family: "Roboto", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
 }
 a * {
