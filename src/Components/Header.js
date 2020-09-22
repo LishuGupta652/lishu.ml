@@ -1,27 +1,24 @@
 import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import LogRocket from "logrocket";
+import { motion } from "framer-motion";
+// import LogRocket from "logrocket";
 // components
 // gsap
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
-
 gsap.registerPlugin(CSSPlugin);
-LogRocket.init("o47tqc/pakkabaniya");
 
-LogRocket.identify("001", {
-  name: "tarun Gupta",
-  email: "001@pakkabaniya.ml",
-
-  // Add your own custom user variables here, ie:
-  subscriptionType: "pro",
-});
+// LogRocket.init("o47tqc/pakkabaniya");
+// LogRocket.identify("001", {
+//   name: "tarun Gupta",
+//   email: "001@pakkabaniya.ml",
+//   // Add your own custom user variables here, ie:
+//   subscriptionType: "pro",
+// });
 
 const Header = () => {
   const headerRef = useRef(null);
-
 
   // Targeting the header ref for animation
   //   useEffect(() => {
@@ -97,8 +94,15 @@ const Header = () => {
             className="animated-overlay"
           />
 
-          <div className="love"><span role="img" aria-label="sheep">🐣</span> WITH EASTER LOVE<span role="img" aria-label="sheep">🐣</span>
-</div>
+          <div className="love">
+            <span role="img" aria-label="sheep">
+              🐣
+            </span>{" "}
+            WITH EASTER LOVE
+            <span role="img" aria-label="sheep">
+              🐣
+            </span>
+          </div>
           <div className="content">
             <h1 className="hidetext" onClick={createHeart}>
               Web and Android Developer
@@ -137,7 +141,11 @@ const Header = () => {
                   default: { duration: 0.3 },
                 }}
               >
-                <a href="https://www.github.com/lishugupta652/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.github.com/lishugupta652/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span role="img" aria-label="rocket">
                     🚀
                   </span>
