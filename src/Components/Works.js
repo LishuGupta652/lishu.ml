@@ -363,7 +363,7 @@ const Works = () => {
             <p>PIL</p>
           </div>
           <div className="img">
-            <video loop autostart autoPlay src={trex} type="video/mp4" />
+            <video loop autoStart autoPlay src={trex} type="video/mp4" />
           </div>
         </div>
       </section>
