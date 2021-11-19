@@ -6,7 +6,7 @@
     "@babel/runtime": "^7.5.5",
     "framer-motion": "^2.6.13",
     "gsap": "^3.4.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^4.11.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-page-progress": "^1.1.0",

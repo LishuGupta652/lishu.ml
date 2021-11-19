@@ -3,19 +3,19 @@
   "name": "PortFolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "lishu.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon",
       "purpose": "any maskable"
     },
     {
-      "src": "maskable_icon.png",
+      "src": "lishu.jpg",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "lishu.jpg",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
