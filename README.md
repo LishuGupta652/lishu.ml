@@ -1,5 +1,7 @@
 @portfolio
 
+## Version 2.0 upcomming
+
 # BRANCH UPDATE
 
 ![Image](https://www.pakkabaniya.ml/favicon.ico "lishugupta")
@@ -23,5 +25,4 @@
 
 ## Upcomming Updated
 
-- [ ] Adding gsap.
-- [ ] Update Color Schemes
+- [ ] Adding Router Gsap.
