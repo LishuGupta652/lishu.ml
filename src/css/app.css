@@ -32,7 +32,6 @@ html * {
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition: var(--primary-transition);
   font-family: "Montserrat Alternates", sans-serif;
 }
 a * {
