@@ -34,6 +34,9 @@ html * {
   scroll-behavior: smooth;
   font-family: "Montserrat Alternates", sans-serif;
 }
+body {
+  background-color: #121212;
+}
 a * {
   color: inherit;
 }
@@ -124,6 +127,7 @@ a * {
   position: relative;
   width: 100%;
   margin-bottom: 0;
+  background-color: #121212;
 }
 .work h1 {
   font-size: 75px;
