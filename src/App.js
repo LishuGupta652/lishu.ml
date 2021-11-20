@@ -5,6 +5,7 @@ import "./css/app.css";
 import "./css/ui.css";
 import "./css/about.css";
 import "./css/test.css";
+import "./css/auth.css"
 
 // Components
 import Home from "./pages/home";
