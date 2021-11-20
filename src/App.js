@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // CSS IMPORTS
-import "./css/App.scss";
-import "./css/UI.scss";
-import "./css/about.scss";
-import "./css/test.scss";
+import "./css/app.css";
+import "./css/ui.css";
+import "./css/about.css";
+import "./css/test.css";
 
 // Components
 import Home from "./pages/home";
