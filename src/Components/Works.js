@@ -46,18 +46,18 @@ const Works = () => {
 
     let proxy = { skew: 0 },
       skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-      clamp = gsap.utils.clamp(-15, 15); // don't let the skew go beyond 20 degrees.
+      clamp = gsap.utils.clamp(-2, 2); // don't let the skew go beyond 20 degrees.
 
     ScrollTrigger.create({
       onUpdate: (self) => {
-        let skew = clamp(self.getVelocity() / -300);
+        let skew = clamp(self.getVelocity() / -10);
         // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
         if (Math.abs(skew) > Math.abs(proxy.skew)) {
           proxy.skew = skew;
           gsap.to(proxy, {
             skew: 0,
-            duration: 0.8,
-            ease: "power3",
+            duration: .3,
+            ease: "power4",
             overwrite: true,
             onUpdate: () => skewSetter(proxy.skew),
           });
@@ -122,13 +122,13 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                //   //   transitionEnd: {
+                //   //     display: "none",
+                //   //   },
+                // }}
                 transition={{ duration: 0.1 }}
                 src={azaelindia}
                 alt="Azael India"
@@ -149,13 +149,13 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                //   //   transitionEnd: {
+                //   //     display: "none",
+                //   //   },
+                // }}
                 transition={{ duration: 0.1 }}
                 src={dwarfinc}
                 alt="Dwarf INC"
@@ -194,10 +194,10 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                // }}
                 transition={{ duration: 0.1 }}
                 src={whatsappclone}
                 alt="Dwarf INC"
@@ -218,10 +218,10 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                // }}
                 transition={{ duration: 0.1 }}
                 src={instagramclone}
                 alt="Dwarf INC"
@@ -258,13 +258,13 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                //   //   transitionEnd: {
+                //   //     display: "none",
+                //   //   },
+                // }}
                 transition={{ duration: 0.1 }}
                 src={payingguest}
                 alt="Paying Guest"
@@ -284,13 +284,13 @@ const Works = () => {
             >
               <motion.img
                 className="skewElem"
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
-                  //   transitionEnd: {
-                  //     display: "none",
-                  //   },
-                }}
+                // whileHover={{
+                //   scale: 1.02,
+                //   boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+                //   //   transitionEnd: {
+                //   //     display: "none",
+                //   //   },
+                // }}
                 transition={{ duration: 0.1 }}
                 src={dwarf}
                 alt="The Dwarf Company"
