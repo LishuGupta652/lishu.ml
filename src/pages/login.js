@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/auth.scss";
 import { useHistory } from "react-router-dom";
 
 function Login() {
