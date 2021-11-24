@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/lishu.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="skyblue" />
+    <meta
+      name="description"
+      content="A young and passionate developer. Working with Javascript (NodeJS, Express, ReactJS, React Native), Dart (Flutter), Python (ML)."
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="skyblue" />
-	<meta name="description" content="Full Stack Web Developer, Android Developer and Programmer." />
-	<link rel="apple-touch-icon" href="logo192.png" />
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Lishu gupta | Portfolio</title>
 
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-	<title>Lishu gupta | Portfolio</title>
+      .loading-suspense {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+        font-size: 2rem;
+        place-items: center;
+        z-index: 10;
+      }
+    </style>
+  </head>
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="loading-suspense">Loading ...</div>
+    </div>
+    <script defer type="text/javascript">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "2f92f6eb9618197935112e11f9af1bf6d9199b1079274c21b00f609ee05c6ddcd33976e473cc98a862a1ea8d8b19cb29",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.in/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+      d.write("<div id='zsiqwidget'></div>");
+    </script>
 
-		.loading-suspense {
-			display: grid;
-			width: 100vw;
-			height: 100vh;
-			background-color: #212121;
-			color: #fff;
-			font-size: 2rem;
-			place-items: center;
-			z-index: 10;
-		}
-	</style>
-</head>
-
-<body>
-	<noscript>You need to enable JavaScript to run this app.</noscript>
-	<div id="root">
-		<div class="loading-suspense">Loading ...</div>
-	</div>
-	<script defer type="text/javascript">
-		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
-	{widgetcode:"2f92f6eb9618197935112e11f9af1bf6d9199b1079274c21b00f609ee05c6ddcd33976e473cc98a862a1ea8d8b19cb29", values:{},ready:function(){}};
-	var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-	s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-	</script>
-
-	<script defer src="calm.js"></script>
-	<script defer>
-		document.onkeypress = function(e) {
+    <script defer src="calm.js"></script>
+    <script defer>
+      document.onkeypress = function (e) {
         e = e || window.event;
 
         if (e.keyCode === 13) {
-            document.documentElement.classList.toggle('dark-mode')
+          document.documentElement.classList.toggle("dark-mode");
         }
-		if (e.keyCode === 65) {
-		document.documentElement.classList.toggle('a')
-		}
-    }
-	</script>
-</body>
-
+        if (e.keyCode === 65) {
+          document.documentElement.classList.toggle("a");
+        }
+      };
+    </script>
+  </body>
 </html>
