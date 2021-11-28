@@ -1,27 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// import LogRocket from "logrocket";
-// components
 // gsap
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
 
-
 const Header = () => {
   const headerRef = useRef(null);
-
-  // Targeting the header ref for animation
-  //   useEffect(() => {
-  //     gsap.from(headerRef.current, {
-  //       duration: 0.15,
-  //       autoAlpha: 0,
-  //       ease: "none",
-  //       delay: 0.12,
-  //     });
-  //   }, []);
 
   // Create Hearts when use first enter the component
   useEffect(() => {
@@ -77,6 +64,7 @@ const Header = () => {
       }, randomNumSec * 1000);
     }
   };
+
   return (
     <>
       <header ref={headerRef}>
@@ -103,17 +91,6 @@ const Header = () => {
           </div>
           <div className="nav">
             <motion.div className="logo">
-              {/* <motion.img
-                drag
-                dragConstraints={{
-                  top: -50,
-                  left: -50,
-                  right: 150,
-                  bottom: 150,
-                }}
-                src={require("../image/logo.png")}
-                alt="logo"
-              /> */}
               <motion.h6
                 className="logo"
                 animate={{

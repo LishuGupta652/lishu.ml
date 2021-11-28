@@ -36,7 +36,8 @@ html * {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #121212;
+  background-color: #fafafa;
+  color: #121212;
 }
 a * {
   color: inherit;
@@ -55,6 +56,9 @@ a * {
   height: 85vh;
   background-color: #121212;
   color: #fafafa;
+
+  color: #121212;
+  background-color: #fafafa;
 }
 .header .animated-overlay {
   position: absolute;
@@ -123,6 +127,7 @@ a * {
     padding: 20px 20px;
   }
 }
+
 /* Work */
 .work {
   position: relative;
