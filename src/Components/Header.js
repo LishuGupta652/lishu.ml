@@ -9,13 +9,6 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
 
-// LogRocket.init("o47tqc/pakkabaniya");
-// LogRocket.identify("001", {
-//   name: "tarun Gupta",
-//   email: "001@pakkabaniya.ml",
-//   // Add your own custom user variables here, ie:
-//   subscriptionType: "pro",
-// });
 
 const Header = () => {
   const headerRef = useRef(null);
