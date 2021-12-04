@@ -22,7 +22,9 @@
 - [x] User Sass instead of Css (npm instal node-sass)
 - [x] Used Framer-motion
 - [x] Changed font to Montserrat Alternative
+- [x] Adding Router Gsap.
 
 ## Upcomming Updated
 
-- [ ] Adding Router Gsap.
+- [] updating react router dom (npm install react-router-dom)
+- []
