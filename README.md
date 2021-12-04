@@ -27,4 +27,6 @@
 ## Upcomming Updated
 
 - [] updating react router dom (npm install react-router-dom)
-- []
+- [] header
+- [] backend
+- [] blog
